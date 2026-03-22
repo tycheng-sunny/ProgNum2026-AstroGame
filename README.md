@@ -12,6 +12,7 @@ While you are free to build any game you like, there are some **requirements** f
 
 ## GitHub Instruction: working on your own branch
 ### To start your project
+* ``Fork`` the repository to your own account
 * Clone the repository (HTTP) to your HOME directory
 * Change directory to this repository
 * Type this command in your terminal ``git checkout -b game-{firstname + first letter of your surname}``. For example, my branch will be called "***game-SunnyC***"
