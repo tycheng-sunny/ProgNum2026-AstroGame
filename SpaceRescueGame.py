@@ -97,7 +97,7 @@ class SpaceRescueGame:
         self.turns = 0
         self.max_turns = 10
         self.target_rescues = 3
-        self.visited = set(["Earth"])
+        self.visited = {"Earth"}
 
     def load_planets(self):
         """Create the planet list with astronomical data
@@ -117,16 +117,16 @@ class SpaceRescueGame:
         """Print all planets except the current one
         """
         type_print("\nAvailable destinations:")
-        for i, planet in enumerate(self.planets, start = 1):
-            if planet.name != self.ship.current_planet:
-                type_print(f"{i}. {planet.description()}")
+        available = []
 
-    def get_planet_by_choice(self, choice):
-        """Convert a number choice into a planet object
-        """
-        if 1 <= choice <= len(self.planets):
-            return self.planets[choice - 1]
-        return None
+        for planet in self.planets:
+            if planet.name != self.ship.current_planet:
+                available.append(planet)
+
+        for i, planet in enumerate(available, start = 1):
+            type_print(f"{i}. {planet.description()}")
+
+        return available
 
     def travel_cost(self, planet):
         """Calculate fuel cost to travel.
@@ -234,21 +234,26 @@ class SpaceRescueGame:
     def choose_destination(self):
         """Ask the player where to travel
         """
-        self.list_planets()
+        available = self.list_planets()
 
         while True:
             try:
                 choice = int(input("\nChoose a planet number to travel to: "))
-                planet = self.get_planet_by_choice(choice)
-
-                if planet is None:
-                    type_print("Invalid number. Try again.")
-                elif planet.name == self.ship.current_planet:
-                    type_print("You are already there. Choose another planet.")
+                if 1 <= choice <= len(available):
+                    return available[choice - 1]
                 else:
-                    return planet
+                    type_print("Invalid number. Try again.")
             except ValueError:
                 type_print("Please type a valid number.")
+    
+    def can_travel_anywhere(self):
+        """Return True if at least one destination is affordable
+        """
+        for planet in self.planets:
+            if planet.name != self.ship.current_planet:
+                if self.ship.fuel >= self.travel_cost(planet):
+                    return True
+        return False    
 
     def check_win(self):
         """Check if player has won
@@ -258,7 +263,7 @@ class SpaceRescueGame:
     def check_loss(self):
         """Check if player has lost
         """
-        return self.ship.is_destroyed() or self.turns >= self.max_turns
+        return self.ship.is_destroyed() or self.turns >= self.max_turns or not self.can_travel_anywhere()
 
     def show_end_message(self):
         """Print the end-of-game message
