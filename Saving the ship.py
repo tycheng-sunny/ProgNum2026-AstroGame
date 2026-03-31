@@ -6,7 +6,7 @@ from matplotlib.pyplot import show, figure, subplots
 import time
 import sys
 
-def t_print(text, speed=0.04):
+def t_print(text, speed=0.03):
     """Function to print text with a typewriter effect"""
     for char in text:
         sys.stdout.write(char)
@@ -40,7 +40,7 @@ class Puzzle1:
         # Calculating and plotting the HI-map using a dataset from the course
 
         # Reading fits file and converting to data array
-        ngc_list = fits.open('ngc6946.fits')
+        ngc_list = fits.open('C:/Users/maeik/OneDrive/Documenten/Programming/Python Game/ngc6946.fits')
         dat = ngc_list[0].data
         data = np.asarray(dat)
 
@@ -317,6 +317,7 @@ class Game:
             self.start()
         else:
             t_print("You do nothing and go down with the ship")
+            t_print("Ending 5/5")
 
     """Section of the game in the left hall"""
     def left_hall(self):
@@ -340,6 +341,7 @@ class Game:
             self.cafe()
         else:
             t_print("\nYou do nothing and go down with the ship")
+            t_print("Ending 5/5")
     
     def cafe(self):
         """Plays the cafeteria scenario"""
@@ -365,6 +367,7 @@ class Game:
             self.keypad()
         else:
             t_print("\nYou do nothing and go down with the ship")
+            t_print("Ending 5/5")
     
 
     """Section of the game at the escape pods"""
@@ -392,6 +395,7 @@ class Game:
         t_print("\nYou get into the escape pod and look back a final time")
         t_print("As you are launched into space there is only one thing to cross your mind: ")
         t_print("            How do I fly this thing?")
+        t_print("Ending 4/5")
     
 
     """Section of the game at the control room entrance"""
@@ -430,6 +434,7 @@ class Game:
         t_print("You lose your balance and fall to the ground")
         t_print("The final thing you see is flames erupting at the end of the hall")
         t_print("As your vision fades")
+        t_print("Ending 2/5")
 
 
     """Section of the game in the control room"""
@@ -464,6 +469,7 @@ class Game:
             self.station_4()
         else:
             t_print("\nYou do nothing and go down with the ship")
+            t_print("Ending 5/5")
     
     def failed_station(self):
         """Defines the failed station ending"""
@@ -472,6 +478,7 @@ class Game:
         t_print("As you fail the code a second time the ship shudders")
         t_print("You lose your balance and fall to the ground")
         t_print("Then everything goes black as the ship explodes around you")
+        t_print("Ending 3/5")
 
     def possible_stations(self):
         """Defines the choices for the stations you haven't reset yet"""
@@ -618,6 +625,7 @@ class Game:
         t_print("STABILIZATION SUCCESSFUL")
         t_print("YOU DID IT! YOU SAVED THE SHIP!")
         t_print("Now you can finally relax and enjoy the view of space on your journey home")
+        t_print("Ending 1/5")
 
 
 game = Game()
