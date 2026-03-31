@@ -6,7 +6,7 @@ from matplotlib.pyplot import show, figure, subplots
 import time
 import sys
 
-def t_print(text, speed=0.00001):
+def t_print(text, speed=0.04):
     """Function to print text with a typewriter effect"""
     for char in text:
         sys.stdout.write(char)
@@ -311,7 +311,7 @@ class Game:
         choice = input("\nAre you sure you don't want to do anything? ").lower().strip()
         self.stay_choice(choice)
 
-    def stay(self, choice):
+    def stay_choice(self, choice):
         """Evaluates the choice to stay or not"""
         if choice == 'no':
             self.start()
