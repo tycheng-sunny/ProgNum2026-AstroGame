@@ -27,9 +27,19 @@ class Personalise:
     def __init__(self):
         pass
     def player(self):
+        '''
+        The function asks an input from the user during the initialization of the game to make it more personalized.
+        Params: none
+        Return: player (str) the name of the user as inputed
+        '''
         player = input()
         return player
     def slow(self,text):
+        '''
+        Slows down the printing of letters in a text.
+        Params: text (str) text that needs to be slowed down
+        Return: after applying the function, the letters will have small time intervals between their printing.
+        '''
         for l in text:
             sys.stdout.write(l)
             sys.stdout.flush()
