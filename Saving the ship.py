@@ -14,6 +14,16 @@ def t_print(text, speed=0.00001):
         time.sleep(speed)
     print()  
 
+class Cafeteria:
+    """Defines what you see in the cafeteria"""
+
+    def __init__(self):
+        t_print("\nAs you walk into the cafetaria, it's pure chaos")
+        t_print("Every branch of the ship which doesn't hold personel for the control room connects here")
+        t_print("People are running around and screaming trying to find their way towards the escape pods")
+        t_print("As you get pushed aside you decide it's time to get out of here")
+
+
 class Puzzle1:
     """Puzzle for getting into the control room"""
 
@@ -245,6 +255,7 @@ class Puzzle5:
         else:
             self.failed_station()
 
+    """Working out constellation 3"""
     def constellation3(self):
         # Plotting constellation: Pegasus
         x = [0.5, 0.7, 2, 2, 2.7, 2.5, 2.55, 2.7, 3.9, 3.7, 4.8, 4.8, 5.7, 4.8]
@@ -263,6 +274,7 @@ class Game:
     """Defining the text and possible choices"""
 
     def __init__(self):
+        """Starts the game & defines where player has been and can't go back"""
         t_print("ERROR! ERROR! SHIP DESTABILIZED")
         t_print("ALL PERSONAL GO TO THE ESCAPE PODS")
         t_print("\nYou wake up and get out of bed")
@@ -277,52 +289,76 @@ class Game:
         }
 
     def start(self):
-        t_print("You find yourself in a room, it's your room")
+        """Gives the start of the game and the first choice"""
+        t_print("\nYou find yourself in a room, it's your room")
         t_print("The room is small, it has a door right across from the bed")
-        t_print("You go out into the hall, you can go left or right or you can stay in your room")
+        t_print("You go out into the hall, as people run past you to the left hall")
+        t_print("You can either go left or right or you can stay in your room")
         choice1 = input("Where do you go(left, right or stay): ").lower().strip()
         self.first_choice(choice1)
 
     def first_choice(self, choice):
+        """Evaluates the first choice"""
         if choice == 'left':
             self.left_hall()
         elif choice == 'right':
             self.right_hall()
         else:
-            t_print("\nYou do nothing and go down with the ship")
-    
+            self.stay()
+
+    def stay(self):
+        """Gives final choice if you want to stay"""
+        choice = input("\nAre you sure you don't want to do anything? ").lower().strip()
+        self.stay_choice(choice)
+
+    def stay(self, choice):
+        """Evaluates the choice to stay or not"""
+        if choice == 'no':
+            self.start()
+        else:
+            t_print("You do nothing and go down with the ship")
 
     """Section of the game in the left hall"""
     def left_hall(self):
+        """Defines what is seen in the left hall"""
         t_print("\nYou run down the hall until you get to a wall")
         t_print("On the wall hangs a sign: ")
         t_print("       <- cafeteria")
         t_print("          escape pods -> ")
         t_print("        ^ control room")
-        t_print("The cafeteria doors have already locked down")
-        t_print("You can either go right to the escape pods or back to the control room")
+        t_print("You can either go left to the cafeteria, right to the escape pods or back to the control room")
         choice_left = input("Where do you go(right or back): ").lower().strip()
         self.lefthall_choice(choice_left)
     
     def lefthall_choice(self, choice):
+        """Evaluates the choice you make in the left hall"""
         if choice == 'back':
             self.right_hall()
         elif choice == 'right':
             self.escape()
+        elif choice == 'left':
+            self.cafe()
         else:
             t_print("\nYou do nothing and go down with the ship")
     
+    def cafe(self):
+        """Plays the cafeteria scenario"""
+        Cafeteria()
+        self.left_hall()
 
     """Section of the game in the left hall"""
     def right_hall(self):
-        t_print("\nYou run down the hall untill you get to a locked door, above it is a sign with: ")
-        t_print("                             'CONTROL ROOM'")
+        """Defines what is seen in the right hall"""
+        t_print("\nYou run down the hall, while the other control room staff run past you in a blind panic")
+        t_print("Finally you get to a locked door, above it is a sign with: ")
+        t_print("                      'CONTROL ROOM'")
         t_print("There is a keypad next to the door to open it")
         t_print("You can either try to open the door or go back to see what is down the other hall")
         choice_right = input("What will you do(open or back): ").lower().strip()
         self.righthall_choice(choice_right)
     
     def righthall_choice(self, choice):
+        """Evaluates the choice made in the right hall"""
         if choice == 'back':
             self.left_hall()
         elif choice == 'open':
@@ -333,20 +369,26 @@ class Game:
 
     """Section of the game at the escape pods"""
     def escape(self):
-        t_print("\nYou get to the hall with the escape pods")
+        """Defines what happens if you go to the escape pods"""
+        t_print("\nYou get to the hall with the escape pods, it's absolute mayhem")
         t_print("You notice that there are not nearly enough pods to help everyone of the ship")
+        t_print("And anyone who's here runs to an empty pod, pushing everyone out of their way")
         t_print("Do you want to get in a pod and leave everyone to fend for themselves?")
         t_print("Or do you go back and attempt to get to the control room?")
         choice_escape = input("What will you do(escape or back): ").lower().strip()
         self.escape_choice(choice_escape)
     
     def escape_choice(self, choice):
+        """Evaluates the choice to escape or not"""
         if choice == 'back':
             self.right_hall()
         elif choice == 'escape':
             self.escape_ending()
     
     def escape_ending(self):
+        """Defines the escape ending"""
+        t_print("\nYou see an empty pod not to far from you")
+        t_print("Running towards it you shove a couple of colleagues aside")
         t_print("\nYou get into the escape pod and look back a final time")
         t_print("As you are launched into space there is only one thing to cross your mind: ")
         t_print("            How do I fly this thing?")
@@ -354,31 +396,35 @@ class Game:
 
     """Section of the game at the control room entrance"""
     def keypad(self):
-
+        """Defines the first puzzle at the keypad"""
         Puzzle1()
 
         code = input("Input your code here: ")
         self.code_evaluation(code)
 
     def code_evaluation(self, code):
+        """Evaluates your answer to the puzzle"""
         if code == '6050':
             self.controlroom()
         else:
             self.retry()
     
     def retry(self):
+        """Gives the player a second chance to solve the puzzle"""
         t_print("Wrong code; Try again")
         t_print("Hint: The code is: RADEC")
         code_retry = input("Input your code here: ")
         self.code_retry(code_retry)
     
     def code_retry(self, code):
+        """Evaluates the second try"""
         if code == '6050':
             self.controlroom()
         else:
             self.failed()
 
     def failed(self):
+        """Defines the failed keypad ending"""
         t_print("ALARM! ALARM! SHIP GOING DOWN")
         t_print("As you fail the code a second time the ship shudders")
         t_print("You lose your balance and fall to the ground")
@@ -388,6 +434,7 @@ class Game:
 
     """Section of the game in the control room"""
     def controlroom(self):
+        """Defines what you see when you get into the control room"""
         t_print("When you enter the code, the light on the keypad turns green")
         t_print("ACCES GRANTED")
         t_print("You run into the control room and grab hold of the main console")
@@ -406,6 +453,7 @@ class Game:
         self.station_choice(choice_station)
     
     def station_choice(self, choice):
+        """Evaluates and sends you to the station you choose"""
         if choice == '1':
             self.station_1()
         elif choice == '2':
@@ -418,6 +466,7 @@ class Game:
             t_print("\nYou do nothing and go down with the ship")
     
     def failed_station(self):
+        """Defines the failed station ending"""
         t_print("ERROR! ERROR! SYSTEM FAILURE")
         t_print("INITIATE SELF DESTRUCT")
         t_print("As you fail the code a second time the ship shudders")
@@ -425,6 +474,7 @@ class Game:
         t_print("Then everything goes black as the ship explodes around you")
 
     def possible_stations(self):
+        """Defines the choices for the stations you haven't reset yet"""
         if all(self.stations_reset.values()):
             self.final_ending()
         else:
@@ -435,12 +485,14 @@ class Game:
 
     """Section of the game at station 1"""
     def station_1(self):
+        """Defines the puzzle for station 1"""
         Puzzle2()
 
         code = input("Input your order here: ")
         self.station1_code_evaluation(code)
     
     def station1_code_evaluation(self, code):
+        """Evaluates your answer to the puzzle"""
         if code == 'MVEMJSUN':
             t_print("STATION 1 RESET")
             t_print("You have successfully reset station 1, you can now move on to the next station")
@@ -452,6 +504,7 @@ class Game:
             self.station1_code_retry(code_retry)
     
     def station1_code_retry(self, code):
+        """Gives the player a second chance to solve the puzzle and gives a hint"""
         if code == 'MVEMJSUN':
             t_print("STATION 1 RESET")
             t_print("You have successfully reset station 1, you can now move on to the next station")
@@ -463,12 +516,14 @@ class Game:
 
     """Sections for station 2"""
     def station_2(self):
+        """Defines the puzzle for station 2"""
         Puzzle3()
 
         code = input("Input your peaks here: ")
         self.station2_code_evaluation(code)
 
     def station2_code_evaluation(self, code):
+        """Evaluates your answer to the puzzle"""
         if code == '20457095':
             t_print("STATION 2 RESET")
             t_print("You have successfully reset station 2, you can now move on to the next station")
@@ -481,6 +536,7 @@ class Game:
             self.station2_code_retry(code_retry)
     
     def station2_code_retry(self, code):
+        """Gives the player a second chance to solve the puzzle and gives a hint"""
         if code == '20457095':
             t_print("STATION 2 RESET")
             t_print("You have successfully reset station 2, you can now move on to the next station")
@@ -492,12 +548,14 @@ class Game:
 
     """Section of the game at station 3"""
     def station_3(self):
+        """Defines the puzzle for station 3"""
         Puzzle4()
 
         code = input("Input classification here: ")
         self.station3_code_evaluation(code)
     
     def station3_code_evaluation(self, code):
+        """Evaluates your answer to the puzzle"""
         if code == 'G-yellow-Main sequence':
             t_print("STATION 3 RESET")
             t_print("You have successfully reset station 3, you can now move on to the next station")
@@ -510,6 +568,8 @@ class Game:
             self.station3_code_retry(code_retry)
     
     def station3_code_retry(self, code):
+        """Gives the player a second chance to solve the puzzle and gives a hint"""
+        """Evaluates your answer to the puzzle"""
         if code == 'G-yellow-Main sequence':
             t_print("STATION 3 RESET")
             t_print("You have successfully reset station 3, you can now move on to the next station")
@@ -521,12 +581,14 @@ class Game:
     
     """Section of the game at station 4"""
     def station_4(self):
+        """Defines the puzzle for station 4"""
         Puzzle5()
 
         Input = input("Input the name of the third constellation: ").lower().strip()
         self.constellation_evaluation(Input)
 
     def constellation_evaluation(self, Input):
+        """Evaluates your answer to the puzzle"""
         if Input == 'pegasus':
             t_print("CONSTELLATION 3 CORRECT")
             t_print("You have successfully reset station 4, you can now move on to the next station")
@@ -539,6 +601,7 @@ class Game:
             self.constellation1_retry(Input_retry)
 
     def constellation1_retry(self, Input):
+        """Gives the player a second chance to solve the puzzle and gives a hint"""
         if Input == 'pegasus':
             t_print("CONSTELLATION 3 CORRECT")
             t_print("You have successfully reset station 4, you can now move on to the next station")
@@ -549,6 +612,7 @@ class Game:
 
     """"Final ending of the game"""
     def final_ending(self):
+        """Defines the final ending of the game"""
         t_print("\nAs you reset the last station, you feel that the ship has stopped shaking")
         t_print("You walk back to the main console and check the status")
         t_print("STABILIZATION SUCCESSFUL")
