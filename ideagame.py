@@ -115,7 +115,6 @@ enemies = []
 bullets = []
 bullet_speed = 10
 clock = pygame.time.Clock()
-radius1 = 1
 while True:
     clock.tick(60) # limits frames per second to 60
     screen.fill(black)
