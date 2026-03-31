@@ -32,7 +32,7 @@ class Puzzle1:
         t_print("On the note it says: ")
         t_print("The code to open the control room corresponds to")
         t_print("the RA and DEC of the given HI-map where we find the highest intensity")
-        t_print("Tip: Round to tens")
+        t_print("Tip: Round to tens, write the code as 3090 - (RADEC)")
         t_print("Attached to the note is a picture: ")
         self.HI_map()
 
@@ -108,7 +108,7 @@ class Puzzle2:
 
     def objective(self):
         t_print("To reset the station you need to realign the planets in the correct order")
-        t_print("Input the first letter of each planet in the correct order on the screen")
+        t_print("Input the first letter of each planet in the correct order on the screen (ex. JSMMUVEN")
 
 class Puzzle3:
     """Puzzle for station 2, signal analysis"""
@@ -152,7 +152,7 @@ class Puzzle4:
         self.objective()
         self.info()
 
-        t_print("\nHint: The input should be: Spectral type-color-size spelled out. Example: B-blue-white-Supergiant")
+        t_print("\nHint: The input should be: Spectral type-color-size spelled out. Example: B-blue-white-Supergiant (Also type out spaces)")
 
     def objective(self):
         t_print("\nTo reset the station you need to identify which star is our Sun")
@@ -328,7 +328,7 @@ class Game:
         t_print("          escape pods -> ")
         t_print("        ^ control room")
         t_print("You can either go left to the cafeteria, right to the escape pods or back to the control room")
-        choice_left = input("Where do you go(right or back): ").lower().strip()
+        choice_left = input("Where do you go(left, right or back): ").lower().strip()
         self.lefthall_choice(choice_left)
     
     def lefthall_choice(self, choice):
@@ -416,7 +416,7 @@ class Game:
     def retry(self):
         """Gives the player a second chance to solve the puzzle"""
         t_print("Wrong code; Try again")
-        t_print("Hint: The code is: RADEC")
+        t_print("Hint: They are not the same number")
         code_retry = input("Input your code here: ")
         self.code_retry(code_retry)
     
