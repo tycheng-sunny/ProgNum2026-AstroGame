@@ -2,7 +2,7 @@ import numpy as np
 import time
 import sys
 
-def type_print(text, speed = 0.03):
+def type_print(text, speed = 0.035):
     # Print everything like someones typing
     for char in text:
         sys.stdout.write(char)
@@ -112,21 +112,6 @@ class SpaceRescueGame:
             Planet("Uranus", 19.22, 0.89, -195, 27, 35),
             Planet("Neptune", 30.05, 1.14, -200, 14, 40),
         ]
-        
-    def list_planets(self):
-        """Print all planets except the current one
-        """
-        type_print("\nAvailable destinations:")
-        available = []
-
-        for planet in self.planets:
-            if planet.name != self.ship.current_planet:
-                available.append(planet)
-
-        for i, planet in enumerate(available, start = 1):
-            type_print(f"{i}. {planet.description()}")
-
-        return available
 
     def travel_cost(self, planet):
         """Calculate fuel cost to travel.
@@ -134,7 +119,34 @@ class SpaceRescueGame:
         """
         current = self.get_current_planet()
         distance_difference = abs(planet.distance_au - current.distance_au)
-        return int(distance_difference * 3) + 5
+        return min((int(distance_difference * 3.5) + 5), 75)
+            
+    def list_planets(self):
+        """Print all planets except the current one"""
+        type_print("\nAvailable destinations:")
+        available = []
+
+        current = self.get_current_planet()
+
+        for planet in self.planets:
+            if planet.name != self.ship.current_planet:
+                available.append(planet)
+
+        for i, planet in enumerate(available, start = 1):
+            distance = abs(planet.distance_au - current.distance_au)
+            cost = self.travel_cost(planet)
+            points = planet.points_value
+
+            print(
+                f"{i}. {planet.name}: distance = {distance:.2f} AU, "
+                f"gravity = {planet.gravity} g, "
+                f"temperature = {planet.temperature} °C, "
+                f"moons = {planet.moons}, "
+                f"Fuel cost: {cost}, " 
+                f"Points: {points}, "
+            )
+
+        return available   
 
     def get_current_planet(self):
         """Return the current planet object
@@ -183,7 +195,7 @@ class SpaceRescueGame:
         # Gravity hazard
         
         if planet.gravity > 2.0:
-            type_print("High gravity makes landing difficult.")
+            type_print("High gravity makes landing difficult. Health -10")
             self.ship.health -= 10
         elif planet.gravity < 0.5:
             type_print("Low gravity makes landing is easy.")
@@ -194,6 +206,12 @@ class SpaceRescueGame:
         
         type_print(f"You collect {planet.points_value} points.")
         self.ship.points += planet.points_value
+
+        if self.ship.points >= 50:
+            type_print("Scientific breakthrough! Damn, you investigated many planets. Your points will be transferred into fuel and health +10.")
+            self.ship.fuel += 10
+            self.ship.health += 10
+            self.ship.points -= 50
 
     def rescue_event(self, planet):
         """Determine whether there is an astronaut on the planet.
@@ -253,7 +271,7 @@ class SpaceRescueGame:
             if planet.name != self.ship.current_planet:
                 if self.ship.fuel >= self.travel_cost(planet):
                     return True
-        return False    
+        return print("Not enough fuel for the next destination")   
 
     def check_win(self):
         """Check if player has won
@@ -270,9 +288,9 @@ class SpaceRescueGame:
         """
         type_print("\n==========================================")
         if self.check_win():
-            type_print("\nMission accomplished! Your rescue mission was successful.")
+            type_print("Mission accomplished! Your rescue mission was successful.")
         elif self.check_loss():
-            type_print("\nMission failed. All astronauts you haven't rescued will die.")
+            type_print("Mission failed. All astronauts you haven't rescued will die.")
         type_print("==========================================")
         type_print(self.ship.status())
         type_print(f"Visited planets: {sorted(self.visited)}")
@@ -294,13 +312,14 @@ class SpaceRescueGame:
     def run(self):
         """Run the full game loop
         """
-        
-        type_print("==========================================")
+        print("==========================================")
         type_print("🚀 Welcome to SPACE RESCUE 🚀")
-        type_print("==========================================")
+        print("==========================================")
         type_print("You are the captain of a rescue ship.")
         type_print("Astronauts are stranded across the Solar System.")
         type_print("Travel to planets, and rescue them, but watch out for your health and fuel, if they run out, you lose!")
+        type_print("If you get 50 points, you might get an interesting surprise...")
+        type_print("Don't forget to look on planets you've already been, maybe in the meantime, astronauts are doing investigations there.")
         type_print("\nWin condition:")
         type_print(f"- Rescue at least {self.target_rescues} astronauts")
         type_print(f"- Survive for up to {self.max_turns} turns\n")
