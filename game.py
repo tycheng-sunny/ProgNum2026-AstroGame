@@ -29,6 +29,17 @@ for side in range(4):
     border_pen.lt(90)
 border_pen.hideturtle()
 
+#Score (will also act as 'difficulty')
+score = 0
+score_pen = turtle.Turtle()
+score_pen.speed(0)
+score_pen.color('white')
+score_pen.penup()
+score_pen.setposition(-290, 280)
+scorestring = f'Score: {score}'
+score_pen.write(scorestring, False, align='left', font=('Arial', 14, 'normal'))
+score_pen.hideturtle()
+
 #Create player
 player = turtle.Turtle()
 player.color('green')
@@ -59,7 +70,8 @@ for galaxy in galaxies:
     y = random.randint(-200,-100)
     galaxy.setposition(x, y)
 
-galaxyspeed = 2
+galaxyspeed = 3 + 0.01 * score
+position_offset = 0   #To be used later in making galaxies appear farther up
 
 #Create the beam
 beam = turtle.Turtle()
@@ -149,8 +161,14 @@ while True:
             beamspeed *= -1
             #Replace galaxy
             x = random.randint(-200,200)
-            y = random.randint(-200,-100)
+            y = random.randint(-200 + position_offset, -100 + position_offset)
             galaxy.setposition(x, y)
+            position_offset = score if score < 350 else 350
+            # Update score
+            score += 10
+            scorestring = f'Score: {score}'
+            score_pen.clear()
+            score_pen.write(scorestring, False, align='left', font=('Arial', 14, 'normal'))
 
         if galaxy.ycor() > 280:
             print('Game Over')
