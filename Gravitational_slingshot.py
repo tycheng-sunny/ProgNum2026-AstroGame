@@ -6,22 +6,24 @@ ROCHE, JUP_RAD = 120000.0, 69911.0
 
 class Ship:
     def __init__(self):
-        # Spawning far to the left to force a wide, sweeping orbital arc
-        self.x, self.y = -350000.0, -50000.0
+        # Spawning closer and higher up to force a steep dive
+        self.x, self.y = -200000.0, -150000.0
         
-        # Carefully calculated vector to hit a periapsis of exactly 115,822 km
-        self.vx, self.vy = 12.0, 16.0
-        self.fuel = 1200.0
+        # Lower initial velocity means gravity will overpower you immediately.
+        # You must burn hard to avoid the Roche limit!
+        self.vx, self.vy = 6.0, 8.0 
+        self.fuel = 2000
         
-        # Point the nose exactly along the velocity vector
-        self.angle = math.degrees(math.atan2(16.0, 12.0)) 
+        # Automatically point the nose exactly along the velocity vector
+        self.angle = math.degrees(math.atan2(self.vy, self.vx)) 
         self.trail = []
-
+        self.time_elapsed = 0.0
 # --- 2. SETUP ---
 pygame.init()
 screen = pygame.display.set_mode((900, 700))
 clock = pygame.time.Clock()
-font = pygame.font.SysFont("Courier", 24, True)
+# Adjusted font size slightly so the longer string fits better on screen
+font = pygame.font.SysFont("Courier", 18, True) 
 state, ship = "CLICK TO START", Ship()
 
 # --- 3. MAIN LOOP ---
@@ -35,6 +37,9 @@ while True:
             if state != "PLAYING": state, ship = "PLAYING", Ship()
 
     if state == "PLAYING":
+        # NEW: Increment time by 1/60th of a second per frame
+        ship.time_elapsed += 1 / 60.0 
+        
         keys = pygame.key.get_pressed()
         if keys[pygame.K_LEFT] or keys[pygame.K_a]: ship.angle -= 3
         if keys[pygame.K_RIGHT] or keys[pygame.K_d]: ship.angle += 3
@@ -89,8 +94,11 @@ while True:
         if state == "PLAYING" and thrusting: # Draw Engine Flame
             pygame.draw.line(screen, (255, 150, 0), (sx, sy), (sx - math.cos(rad)*15, sy - math.sin(rad)*15), 4)
 
-    # Draw UI text
-    screen.blit(font.render(f"STATUS: {state} | FUEL: {int(ship.fuel)}", True, (200, 200, 200)), (20, 20))
+# Calculate speed using Pythagorean theorem on the velocity vectors
+    speed = math.sqrt(ship.vx**2 + ship.vy**2)
+    
+    ui_text = f"STATUS: {state} | FUEL: {int(ship.fuel)} | RELATIVE SPD: {speed:.1f} | T: {ship.time_elapsed:.1f}s"
+    screen.blit(font.render(ui_text, True, (200, 200, 200)), (20, 20))
     
     pygame.display.flip()
     clock.tick(60)
