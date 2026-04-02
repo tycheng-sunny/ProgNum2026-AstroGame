@@ -6,6 +6,7 @@ High-score game: Catalogue each galaxy before they disappear!
 import turtle
 import math
 import random
+import time
 
 galaxy_catalogue = [
     'Andromeda',
@@ -27,6 +28,7 @@ player_catalogue = []
 screen = turtle.Screen()
 screen.bgcolor('black')
 screen.title('Galaxy Finder')
+turtle.bgpic('m101.png')
 
 # Draw border
 border_pen = turtle.Turtle()
@@ -155,7 +157,7 @@ turtle.onkey(P.move_right, 'Right')
 turtle.onkey(P.fire_beam, 'space')
 
 # Main game loop
-while True:
+while len(galaxy_catalogue) != 0:
 
     for galaxy in galaxies:
         # Move the galaxies
@@ -199,7 +201,16 @@ while True:
             galaxy_catalogue.remove(rand_galaxy)
 
         if galaxy.ycor() > 280:
-            print('Game Over')
+            catalogue_pen.clear()
+            losestring = 'Game Over!'
+            lose_pen = turtle.Turtle()
+            lose_pen.speed(0)
+            lose_pen.color('white')
+            lose_pen.penup()
+            lose_pen.setposition(-100, 0)
+            lose_pen.write(losestring, False, align='left', font=('Arial', 50, 'normal'))
+            lose_pen.hideturtle()
+            time.sleep(3)
             break
 
     # Move beam
@@ -220,3 +231,14 @@ while True:
     if beam.ycor() > 270:
         beam.hideturtle()
         beamstate = 'ready'
+
+catalogue_pen.clear()
+winstring = 'You Win!'
+win_pen = turtle.Turtle()
+win_pen.speed(0)
+win_pen.color('white')
+win_pen.penup()
+win_pen.setposition(-100, 0)
+win_pen.write(winstring, False, align='left', font=('Arial', 50, 'normal'))
+win_pen.hideturtle()
+time.sleep(3)
