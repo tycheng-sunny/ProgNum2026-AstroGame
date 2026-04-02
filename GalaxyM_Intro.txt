@@ -1,0 +1,49 @@
+
+Welcome to the AstroHub, Anaconda 7!
+
+It has been 494 light years since your departure from Earth, and VIRGO11 will exit the Milky Way soon!
+Comm26 has just received your next mission. The AstroHub TTS System will now read the mission:
+
+                            MISSION
+---------------------------------------------------------------------
+Take spectra of all galaxies within range until reaching destination.
+Create images of said galaxies to map your space route.
+Use the known galaxy coordinates to generate a path towards target.
+
+                            TARGET
+---------------------------------------------------------------------
+The Antennae Galaxies (NGC 4038 & NGC 4039)
+Distance: approximately 71.75 Mly
+Constellation: Corvus
+
+The Antennae Galaxies are a pair of interacting galaxies, undergoing a galactic collision.
+Located in the NGC 4038 group, these two galaxies are known as the 
+Antennae Galaxies because the two long tails of stars, gas and dust ejected from the galaxies 
+resemble an insect's antennae. The tails and a relatively young collection of massive globular
+clusters are a result of the collision.
+The nuclei of the two galaxies are joining to become one giant galaxy.
+
+                            SPECIFICATIONS
+---------------------------------------------------------------------
+Galaxies to be passed, in ascending order of distance:
+Messier 32 (NGC 221), also known as M32
+Centaurus A (NGC 5128), also known as Caldwell 77
+Messier 82 (NGC 3034), also known as Cigar Galaxy
+Messier 81 (NGC 3031), also known as Bode's Galaxy
+Messier 64 (NGC 4826), also known as the Black Eye Galaxy
+Messier 101 (NGC 5457), also known as the Pinwheel Galaxy
+NGC 6946, also known as the Fireworks Galaxy
+
+To get the correct coordinates, match the Earth-generated images to the first trial images, which were
+made within the last 151 ly of travelling by the HVST (Hydra-Virgo Space Telescope).
+The coordinates of each galaxy will be displayed on the monitor when a match is found.
+Only the coordinates of the target are usefull to make a path.
+Memorize what coordinates belong to what match.
+
+Any further information on the galaxies is stored in the digital safe.
+Access to the safe can be authorized by the leading astronaut after exiting the Milky Way.
+
+After all the images are matched and classified, enter the RA (Right Ascension) and the DEC (Declinaton)
+coordinates of the Antennae Galaxies as one large number (without spaces, dots or minusses) to alter the course.
+---------------------------------------------------------------------
+Good luck!
