@@ -239,6 +239,7 @@ while True:
 
 
     if (abs(myball.rect.x - ScreenWideness/2) < 10) and abs(myball.rect.y - ScreenHighness/2) < 10:
+        pygame.quit()
         print('You\'re winner')
         print(f'You took {count} shots!')
         if count == 67:
