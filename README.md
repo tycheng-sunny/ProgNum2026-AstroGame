@@ -41,7 +41,7 @@ While you are free to build any game you like, there are some **requirements** f
 * At least one (any) astronomical data is required (this does not count as your astronomy-theme). You can use any data we have provided in this course, or free to download your own data from any astronomical databases. 
 * Object-Oriented Programming is required.
 * Every codes require appropriate comments, and docstrings (for function)
-* To encourage you building a proper game, at least **50 lines** in your codes is required.
+* To encourage you building a proper game, at least **80 lines** in your codes is required.
 * AI ***assistance*** is permitted in this exercise, but building everything with AI is not allowed. Therefore, you need to understand every single line of your codes as we will ask you ;-). 
 
 
