@@ -71,8 +71,8 @@ if sip != 'skip':
     print('Error: Try again')
     time.sleep(0.5)
     ogloc = input('Enter filename (e.g. \'map.fits\'/\'m101.fits\'): ')
-    pee = input('Choose difficulty: 1, 2, or 3:  ')
-    if int(pee) > 3 :
+    pee = int(input('Choose difficulty: 1, 2, or 3:  '))
+    if pee > 3 :
         BUMPERS = 67
         print('==== Achievement: Good luck! ====')
     elif pee == 1:
@@ -191,7 +191,20 @@ myball.rect.y = 100
 sprite_list.add(myball)
 sprite_list.add(mypow)
 
-bumps = [Bumper(np.random.rand()*(ScreenHighness-BUMPERSIZE), np.random.rand()*(ScreenWideness-BUMPERSIZE), BUMPERSIZE) for i in range(BUMPERS)]
+def centre():
+    a = np.random.rand()*(ScreenHighness-BUMPERSIZE)
+    while (a > (ScreenHighness/2)-BUMPERSIZE) and (a< (ScreenHighness/2)+BUMPERSIZE):
+        a= np.random.rand()*(ScreenHighness-BUMPERSIZE)
+    return a
+
+def widd():
+    a = np.random.rand()*(ScreenWideness-BUMPERSIZE)
+    while (a > 100 - BUMPERSIZE) and (a< 100+BUMPERSIZE):
+        a= np.random.rand()*(ScreenWideness-BUMPERSIZE)
+    return a
+
+bumps = [Bumper(widd(), centre(), BUMPERSIZE) for i in range(BUMPERS)]
+bumps.append(Bumper(300, 600, BUMPERSIZE))
 for i in bumps:
     sprite_list.add(i)
 
@@ -217,11 +230,12 @@ while True:
 
     if firsttime < 5:
         for i in bumps:
-            if i.rect.colliderect(myball.rect) or i.rect.collidepoint(int(ScreenWideness/2) , int(ScreenHighness/2)):
+            if i.rect.colliderect(myball.rect) or i.rect.collidepoint(int(ScreenWideness/2), int(ScreenHighness/2)):
                 sprite_list.remove(i)
         sprite_list.update()
 
     if mypow.rect.colliderect(myball.rect):
+        count -= 5
         time.sleep(3)
         basevel = 10
         ShootAngle = ShootAngle - 3.14159265358
