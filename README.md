@@ -8,7 +8,7 @@ This repository is a project as part of the first-year programming course: *Intr
 
 All games in this repository are developed in Python. Students were given complete creative freedom in designing their games, provided that each project uses at least one real astronomical data, which can be images, spectra, or tabular datasets. As a result, some games may require additional Python packages to run properly.
 
-#### Basic
+#### Basic
 - NumPy
 - AstroPy
 - Matplotlib
