@@ -231,3 +231,7 @@ while running:
         clock.tick(60)
 
 pygame.quit() #game ends, window closes
+
+# (edited by SunnyC; 8 May 2026) Add the lines to help closing screen
+import sys
+sys.exit()
