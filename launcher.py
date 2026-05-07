@@ -1,16 +1,30 @@
 from glossary import *
 import runpy
+import os
+import time
 from rich import print
 from rich.panel import Panel
-from rich.columns import Columns
 from rich.table import Table
+from rich.progress import Progress
+
+def loading_game():
+    # Just for fancy effect
+    with Progress() as progress:
+        task = progress.add_task("[cyan]Loading game...", total=100)
+
+        for i in range(100):
+            time.sleep(0.005)  # simulate loading
+            progress.update(task, advance=1)
+    print()
+
+def pause():
+    # A pause to allow user to read the information about the game
+    input("\nPress Enter to continue...\n")
 
 def game_ownership(game_name):
-    print()
-    print(Panel(f"\nStarting {game_name}...\n" \
-                f"This game is developed by [italic]{AUTHOR_NAMES[game_name]}[/italic]. Have fun!\n" \
+    print(Panel(f"This game is developed by [italic]{AUTHOR_NAMES[game_name]}[/italic].\n\n" \
+                f"{GAME_INFO[game_name]}" \
                 , title="About the Game"))
-    print()
 
 def show_launcher(game_names):
     ncols, nrows = 5, 11
@@ -75,14 +89,18 @@ def main():
 
         # Read the path of the selected game
         game_name = game_names[index]
-        path = GAMES[game_name]
+        path = GAMES[game_name] #+ "game.py"
 
-        # Display the ownership of the game
-        game_ownership(game_name)
+        # Print stating and display game information
+        print(f"\nStarting the game: [italic]{game_name}[/italic]")
+        loading_game() # Just for fancy effect
+        game_ownership(game_name) # Game ownership and information
+        pause() # Allow user to read the information
 
         # Launch the game
         try:
-            runpy.run_path(path, run_name="__main__")
+            os.chdir(path)
+            runpy.run_path("game.py", run_name="__main__")
         except Exception as e:
             print(f"Game crashed: {e}")
 
