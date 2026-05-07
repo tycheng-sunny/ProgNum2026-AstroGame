@@ -6,7 +6,7 @@ This repository is a project as part of the first-year programming course for As
 
 Be patient that some games may take a while to load. Additionally, be kind, this is just an assignment for fun, and we hope you have fun! :-)
 
-### Requirement
+## Requirement
 
 All games in this repository are developed in Python. Students were given complete creative freedom in designing their games, provided that each project uses at least one real astronomical data, which can be images, spectra, or tabular datasets. As a result, some games may require additional Python packages to run properly.
 
@@ -18,8 +18,8 @@ All games in this repository are developed in Python. Students were given comple
 #### Additional for some games
 - [pygame](https://www.pygame.org/wiki/GettingStarted)
 
----
-# Credits 
+
+## Credits 
 
 Thanks to all the creators for their efforts. The names are listed in alphabetical order by surname.
 
