@@ -4,9 +4,17 @@ Welcome to the **Astronomy Game Project**! 🚀
 
 This repository is a project as part of the first-year programming course for Astronomy major. It features a collection of games developed by amazing first-year students at the [Kapteyn Astronomical Institute](https://www.rug.nl/research/kapteyn/?lang=en), University of Groningen (Netherlands). A full list of these creators is provided at the bottom of the page.
 
-Please note that some games may take a little time to load. In addition, a few games may not close down the game window or unintentionally close the launcher when the game ends, due to the way they were programmed. If this happens, simply close down the window manually and/or run the launcher again to continue trying other games.
+Please note that some games may take a little time to load. In addition, a few games may not close the game window or unintentionally close the launcher when the game ends, due to the way they were programmed. If this happens, simply close the window manually and/or restart the launcher to continue trying other games. **Please also be aware that, in some unfortunate cases, games may not function as intended**.
 
 Most importantly, please remember that these projects were created as part of a fun first-year assignment. We hope you enjoy playing them as much as the students enjoyed creating them! :-)
+
+### How to play?
+Download the repository and run the following command in your terminal to launch the game menu:
+```python
+python launcher.py
+```
+You will then see the game launcher interface. Enter the number corresponding to the game you would like to play and enjoy!
+
 
 ### Requirement
 
@@ -26,5 +34,5 @@ All games in this repository are developed in Python. Students were given comple
 
 Thanks to all the creators for their efforts. The names are listed in alphabetical order by surname.
 
-*J. Alberda, D. Alvarez Corres, M. Boer, L. Burgos Ballester, V. Calvo Tenza, N. Demmenie, M. Gerritsen, A. Hreniuc, L. Klingens, S. Leszek, N. Stephen, L. Suberbere, A. Vecht*
+*J. Alberda, D. Alvarez Corres, M. Boer, L. Burgos Ballester, V. Calvo Tenza, N. Demmenie, M. Gerritsen, A. Hreniuc, L. Klingens, S. Leszek, N. Stephen, L. Suberbere, A. Valmana Perez, A. Vecht, J. Whibley*
 

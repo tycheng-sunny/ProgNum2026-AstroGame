@@ -60,8 +60,8 @@ constellations = {}     #dict to append to
 
 for name, star_list in stars.items():         #looping through the stars to get info (and account for processing errors)
     result = Simbad.query_objects(star_list)
-    ra  = result['RA'].astype(str)
-    dec = result['DEC'].astype(str)
+    ra  = result['ra'].astype(str)
+    dec = result['dec'].astype(str)
     valid = []                   #list of valid ones to append to
     for r, d in zip(ra, dec):                   #zip goes through both of them as a tuple
         if r == 'N/A' or d == 'N/A':
