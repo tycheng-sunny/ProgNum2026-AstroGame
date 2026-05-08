@@ -3,7 +3,7 @@ from scipy import stats
 import matplotlib.pyplot as plt
 import numpy as np 
 
-hdulist = fits.open('~/PROGNUM-repo/Task6/m101(1).fits')
+hdulist = fits.open('m101.fits') # Edited by SunnyC, 8 May 2026
 dat = hdulist[0].data
 datarr = np.asarray(dat, dtype='float64')
 
