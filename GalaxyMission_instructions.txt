@@ -1,0 +1,20 @@
+General Instructions for GalaxyMission
+
+There are a few important things to note before playing GalaxyMission:
+
+1. The code requires the library Pillow to be installed. Pillow is a Python library used for image processing and manipulation. For this game it is used to translate images from Matplotlib to Tkinter.
+
+One can check if Pillow is installed by typing [pip install pillow] in your terminal. If Pillow is already installed, the terminal will state that the
+requirement is already satisfied (or something of that sense). If Pillow isn't installed, it will now start installing it.
+    
+2. The code relies on a few external files: the introduction text (GalaxyM_Intro.txt) and the fits files containing data for the images. In order for the code to work, these need to be present in the same directory as the Python script. For the fits files, they need to be in the directory under a folder called [Images].
+
+Please download the txt and fits files and move them to the directory you're using before running the script. Put all the fits files in a folder called [Images] in that directory. If the files are not in the same directory, the terminal will display an error saying the files used in the code do not exist.
+
+3. Please, please be patient! There is no time limit, you can take your time playing the game. If you click the cards to fast, the program will not check your final imput!
+
+Short introduction to the game:
+You have departed Earth and are in a space ship (your call name is Anaconda 7) on a journey. You receive a mission from Earth to find the coordinates of a galaxy, so you can travel to it.
+By playing a memory game, you can obtain the correct coordinates. At the end, you have to enter the coordinates you found. If the coordinates are correct, you can continue your space life as normal, waiting on the next mission. If the coordinates are wrong, you have to restart the game! So be very carefull when typing and pay close attention to the mission desciption!
+
+Have fun!
