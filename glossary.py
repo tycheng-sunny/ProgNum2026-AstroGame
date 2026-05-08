@@ -8,12 +8,12 @@ GAMES = {
     "Black Hole Game": "game-SL/",
     "Colour Matcher": "game-MG/",
     "Constellations Quiz": "game-VCT/",
+    "Management Sim": "game-LBB/",
     "Medicine across the Universe": "game-LS/",
     "Memorising Galaxies": "game-LK/",
     "Save the Ship": "game-MB/",
     "Space Rescue Game": "game-ND/",
     "Sweet Saviour": "game-AV/",
-    "test5": "test",
     "test6": "test",
     "test7": "test",
     "test8": "test",
@@ -31,6 +31,7 @@ AUTHOR_NAMES = {
     "Black Hole Game": "S. Leszek",
     "Colour Matcher": "M. Gerritsen",
     "Constellations Quiz": "V. Calvo Tenza",
+    "Management Sim": "L. Burgos Ballester",
     "Medicine across the Universe": "L. Suberbere",
     "Memorising Galaxies": "L. Klingens",
     "Space Rescue Game": "N. Demmenie", 
@@ -49,6 +50,7 @@ GAME_INFO = {
         "3. Once you guessed t correctly, you can see the constellation \n "
         "4. Then, repeat until you have learnt all of them \n\n"
         "Good luck guessing and have fun!",
+    "Management Sim": "You are a science project manager, leading expedition amongst different star systems. During the expedition, you can choose to <Survey> the systems, <Mine> useful resources, <Upgrade> anything related to your project, <Scan> the systems, or <Pass>, in this round. When running out funds, morales, or expiry, the game ends.",
     "Medicine across the Universe": "You are on Pluto and need to go to Mercury. Take your ship and you have to make decisions on what do to. Moving to another planet will take you electricity. Everyday you need to eat. You can produce food but it needs electricity. Be careful, if you run out of electricity, you cannot move anymore and are stuck in space forever but if you run out of food, you will die. And the clock is ticking, so don't take too much your time. \n\n"
         "HOW TO PLAY: \n    ""It is very intuitive : just answer the questions and make decision based on what is happening. \n\n"
         "IMPORTANT: \n    ""For the game to be running please input the available options only, otherwise you will just skip to the next day.",
