@@ -12,6 +12,7 @@ GAMES = {
     "Galactic Golf": "game-JA",
     "Galactic Shooter": "game-NS",
     "Galaxy Finder": "game-AVP",
+    "Galaxy Matcher": "game-BD/",
     "Ionise HI Clouds": "game-AH",
     "Management Sim": "game-LBB/",
     "Medicine across the Universe": "game-LS/",
@@ -22,14 +23,7 @@ GAMES = {
     "Space Rescue Game": "game-ND/",
     "Star Wars": "game-SK/",
     "Sweet Saviour": "game-AV/",
-    "test8": "test",
-    "test9": "test",
-    "test10": "test",
-    "test11": "test",
-    "test12": "test",
-    "test13": "test",
-    "test14": "test",
-    "test15": "test",
+    "Travel to Exoplanet": "game-LJ/",
 }
 
 AUTHOR_NAMES = {
@@ -41,6 +35,7 @@ AUTHOR_NAMES = {
     "Galactic Golf": "J. Alberda",
     "Galactic Shooter": "N. Stephen",
     "Galaxy Finder": "A. Valmana Perez",
+    "Galaxy Matcher": "B. Dobak",
     "Ionise HI Clouds": "A. Hreniuc",
     "Management Sim": "L. Burgos Ballester",
     "Medicine across the Universe": "L. Suberbere",
@@ -51,7 +46,7 @@ AUTHOR_NAMES = {
     "Space Rescue Game": "N. Demmenie", 
     "Star Wars": "S. Kokkola",
     "Sweet Saviour": "A. Vecht",
-    "test7": "A. Hreniuc",
+    "Travel to Exoplanet": "L. Jawinski",
 
 }
 
@@ -77,6 +72,7 @@ GAME_INFO = {
         "Esc - Exit the game\n    "
         "R - Restart; start a new round of the game",
     "Galaxy Finder": "Space Invaders variation 'Galaxy Finder'. You shoot a beam and catalogue each galaxy. Game ends when all galaxies in the Local Group are added or a galaxy escapes the range of the beam (goes off-limits).",
+    "Galaxy Matcher": "Click and flip galaxy images to find the matched ones.",
     "Ionise HI Clouds": "Choose the photon frequency (energy). By clicking the left mouse, you will shoot photons. The goal is to ionise all the electrons in the window.", 
     "Management Sim": "You are a science project manager, leading expedition amongst different star systems. During the expedition, you can choose to <Survey> the systems, <Mine> useful resources, <Upgrade> anything related to your project, <Scan> the systems, or <Pass>, in this round. When running out funds, morales, or expiry, the game ends.",
     "Medicine across the Universe": "You are on Pluto and need to go to Mercury. Take your ship and you have to make decisions on what do to. Moving to another planet will take you electricity. Everyday you need to eat. You can produce food but it needs electricity. Be careful, if you run out of electricity, you cannot move anymore and are stuck in space forever but if you run out of food, you will die. And the clock is ticking, so don't take too much your time. \n\n"
@@ -97,4 +93,6 @@ GAME_INFO = {
     "Sweet Saviour": "Welcome to SWEET SAVIOUR! \n\n " 
         "A story based astronomy game in which you are tasked to save the world. \n\n"
         "INSTRUCTIONS: During the story's progression you will be presented with questions and dilemma's. Answer correctly or there might be consequences. In total there are 3 differend endings, try to get them all!",
+    "Travel to Exoplanet": "In this game, you have to find a password to travel to an exoplanet in a distant galaxy and find a new home for humanity.\n\n"
+        "[yellow]IMPORTANT NOTE: Unfortunately, the main image required to run this game was not provided by the creator, so the game is currently unplayable.[/yellow]",
 }

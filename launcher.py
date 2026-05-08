@@ -17,10 +17,6 @@ def loading_game():
             progress.update(task, advance=1)
     print()
 
-def pause():
-    # A pause to allow user to read the information about the game
-    input("\nPress Enter to continue...\n")
-
 def game_ownership(game_name):
     print(Panel(f"This game is developed by [italic]{AUTHOR_NAMES[game_name]}[/italic].\n\n" \
                 f"{GAME_INFO[game_name]}" \
@@ -61,6 +57,13 @@ def show_launcher(game_names):
         )
     )
 
+def confirm_launch(game_name):
+    answer = input(
+        f"Press Enter to launch {game_name} or type b to go back: "
+    )
+
+    return answer.lower() != "b"
+
 def main():
     ini_dir = os.getcwd() # Record the initial dir path
     while True:
@@ -96,17 +99,20 @@ def main():
         print(f"\nStarting the game: [italic]{game_name}[/italic]")
         loading_game() # Just for fancy effect
         game_ownership(game_name) # Game ownership and information
-        pause() # Allow user to read the information
+        x = confirm_launch(game_name) # Allow user to confirm launch or back to menu
 
-        # Launch the game
-        try:
-            os.chdir(path) # Move to specific game folder
-            subprocess.run(["python", "game.py"]) # Run the game (externally; more isolated process)
+        if x:
+            # Launch the game
+            try:
+                os.chdir(path) # Move to specific game folder
+                subprocess.run(["python", "game.py"]) # Run the game (externally; more isolated process)
 
-            # Move back to launcher folder
-            os.chdir(ini_dir) 
-        except Exception as e:
-            print(f"Game crashed: {e}")
+                # Move back to launcher folder
+                os.chdir(ini_dir) 
+            except Exception as e:
+                print(f"Game crashed: {e}")
+        else:
+            continue
 
 
 if __name__ == "__main__":
