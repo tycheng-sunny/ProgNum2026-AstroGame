@@ -16,9 +16,11 @@ GAMES = {
     "Management Sim": "game-LBB/",
     "Medicine across the Universe": "game-LS/",
     "Memorising Galaxies": "game-LK/",
+    "New Home": "game-SH/",
     "Save the Ship": "game-MB/",
     "Space Invaders": "game-ML/",
     "Space Rescue Game": "game-ND/",
+    "Star Wars": "game-SK/",
     "Sweet Saviour": "game-AV/",
     "test8": "test",
     "test9": "test",
@@ -43,9 +45,11 @@ AUTHOR_NAMES = {
     "Management Sim": "L. Burgos Ballester",
     "Medicine across the Universe": "L. Suberbere",
     "Memorising Galaxies": "L. Klingens",
+    "New Home": "S. Haag",
     "Save the Ship": "M. Boer",
     "Space Invaders": "M. Lavik",
     "Space Rescue Game": "N. Demmenie", 
+    "Star Wars": "S. Kokkola",
     "Sweet Saviour": "A. Vecht",
     "test7": "A. Hreniuc",
 
@@ -79,9 +83,17 @@ GAME_INFO = {
         "HOW TO PLAY: \n    ""It is very intuitive : just answer the questions and make decision based on what is happening. \n\n"
         "IMPORTANT: \n    ""For the game to be running please input the available options only, otherwise you will just skip to the next day.",
     "Memorising Galaxies": "You have departed Earth and are in a space ship (your call name is Anaconda 7) on a journey. You receive a mission from Earth to find the coordinates of a galaxy, so you can travel to it. By matching two galaxies together, you can obtain the correct coordinates. At the end, you have to enter the coordinates you found. If the coordinates are correct, you can continue your space life as normal, waiting on the next mission. If the coordinates are wrong, you have to restart the game! So be very careful when typing and pay close attention to the mission description!",
+    "New Home": "The user chooses a new galaxy and star for humanity, and then creates a planet. If the user is not careful, the planet will not be habitable.",
     "Save the Ship": "In this text-based adventure game, you are in your spacecraft, when the alarms suddenly go off. When you wake up you find out that the ship's systems are failing causing it to become destabilized. The only way you can survive is by restoring the spacecraft yourself. Navigate your way through the ship and solve puzzles to ensure it doesn't go down!",
     "Space Invaders": "Space Invaders. Press <space> to shoot the alien ships.",
     "Space Rescue Game": "Space Rescue is a text-based game where you travel between planets to rescue stranded astronauts. Each trip costs fuel based on distance, and planetary conditions can damage your ship. You collect points and may encounter random events that help or harm you. The goal is to rescue enough astronauts within a limited number of turns while managing your fuel and health.", 
+    "Star Wars": "In this game you name and design your own star! Then, you go against other stars. The battle is based on your stars properties. The more superior star will win!\n\n"
+    "Instructions:\n    "
+        "1. Name your star.\n    "
+        "2. You have a limited amount of coins to use. Choose mass, luminosity and velocity.\n    "
+        "3. The game gives you a random star to fight against.\n    "
+        "4. Choose an approach: Aggressive, Evasive or Balanced. In aggressive, the mass of the stars matters most. In evasive, your velocity matters most. In balanced, all properties matter.\n    "
+        "5. Your success depends on your stars properties against the other stars properties. If you win, you can choose to continue paying. If you lose, game is over and you can restart.",
     "Sweet Saviour": "Welcome to SWEET SAVIOUR! \n\n " 
         "A story based astronomy game in which you are tasked to save the world. \n\n"
         "INSTRUCTIONS: During the story's progression you will be presented with questions and dilemma's. Answer correctly or there might be consequences. In total there are 3 differend endings, try to get them all!",
