@@ -1,5 +1,5 @@
 from glossary import *
-import runpy
+import subprocess
 import os
 import time
 from rich import print
@@ -62,6 +62,7 @@ def show_launcher(game_names):
     )
 
 def main():
+    ini_dir = os.getcwd() # Record the initial dir path
     while True:
         # Read game's display name from GAMES
         game_names = list(GAMES.keys())
@@ -89,7 +90,7 @@ def main():
 
         # Read the path of the selected game
         game_name = game_names[index]
-        path = GAMES[game_name] #+ "game.py"
+        path = GAMES[game_name]
 
         # Print stating and display game information
         print(f"\nStarting the game: [italic]{game_name}[/italic]")
@@ -99,8 +100,11 @@ def main():
 
         # Launch the game
         try:
-            os.chdir(path)
-            runpy.run_path("game.py", run_name="__main__")
+            os.chdir(path) # Move to specific game folder
+            subprocess.run(["python", "game.py"]) # Run the game (externally; more isolated process)
+
+            # Move back to launcher folder
+            os.chdir(ini_dir) 
         except Exception as e:
             print(f"Game crashed: {e}")
 
