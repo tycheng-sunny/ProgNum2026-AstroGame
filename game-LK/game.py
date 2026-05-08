@@ -325,6 +325,6 @@ if __name__ == "__main__": # Only run when the file is double-clicked or ran fro
     root = tk.Tk()  # Create main application window.
     root.withdraw()  # Immediatl withdraw window so it's not visible yet
     app = Game(root)  # Instance from the game, makes sure it starts.
-    root.after(60000, lambda: root.deiconify())  # After 60000 milisec (1 min), show the window.
+    root.after(60, lambda: root.deiconify())  # After 60000 milisec (1 min), show the window.
     root.mainloop()  # Keeps window open and waits for user interaction.
 

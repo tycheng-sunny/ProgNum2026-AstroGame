@@ -25,5 +25,5 @@ All games in this repository are developed in Python. Students were given comple
 
 Thanks to all the creators for their efforts. The names are listed in alphabetical order by surname.
 
-*D. Alvarez Corres, M. de Boer, N. Demmenie, M. Gerritsen, S. Leszek*
+*D. Alvarez Corres, M. de Boer, N. Demmenie, M. Gerritsen, L. Klingens, S. Leszek, L. Suberbere*
 
