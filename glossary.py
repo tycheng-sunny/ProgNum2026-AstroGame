@@ -8,14 +8,14 @@ GAMES = {
     "Black Hole Game": "game-SL/",
     "Colour Matcher": "game-MG/",
     "Constellations Quiz": "game-VCT/",
+    "Galactic Golf": "game-JA",
+    "Ionise HI Clouds": "game-AH",
     "Management Sim": "game-LBB/",
     "Medicine across the Universe": "game-LS/",
     "Memorising Galaxies": "game-LK/",
     "Save the Ship": "game-MB/",
     "Space Rescue Game": "game-ND/",
     "Sweet Saviour": "game-AV/",
-    "test6": "test",
-    "test7": "test",
     "test8": "test",
     "test9": "test",
     "test10": "test",
@@ -31,12 +31,16 @@ AUTHOR_NAMES = {
     "Black Hole Game": "S. Leszek",
     "Colour Matcher": "M. Gerritsen",
     "Constellations Quiz": "V. Calvo Tenza",
+    "Galactic Golf": "J. Alberda",
+    "Ionise HI Clouds": "A. Hreniuc",
     "Management Sim": "L. Burgos Ballester",
     "Medicine across the Universe": "L. Suberbere",
     "Memorising Galaxies": "L. Klingens",
     "Space Rescue Game": "N. Demmenie", 
     "Save the Ship": "M. Boer",
     "Sweet Saviour": "A. Vecht",
+    "test7": "A. Hreniuc",
+
 }
 
 GAME_INFO = {
@@ -50,6 +54,8 @@ GAME_INFO = {
         "3. Once you guessed t correctly, you can see the constellation \n "
         "4. Then, repeat until you have learnt all of them \n\n"
         "Good luck guessing and have fun!",
+    "Galactic Golf": "This \"game\" is 100% hand coded. AI was only used twice to guide a fix. The goal of the game is to get the spaceship (blue ball) to the core (white dot at centre of screen), while avoiding Lebron. The background is provided by a user-supplied .fits file (feel free to use your own), where the intensities dictate the slowdown of the spaceship. Use the left and right arrow keys to change the direction before shooting. Use the up and down arrow keys to choose the shot power. Press the spacebar to shoot. Try to find all 3 secret achievements.",
+    "Ionise HI Clouds": "Choose the photon frequency (energy). By clicking the left mouse, you will shoot photons. The goal is to ionise all the electrons in the window.", 
     "Management Sim": "You are a science project manager, leading expedition amongst different star systems. During the expedition, you can choose to <Survey> the systems, <Mine> useful resources, <Upgrade> anything related to your project, <Scan> the systems, or <Pass>, in this round. When running out funds, morales, or expiry, the game ends.",
     "Medicine across the Universe": "You are on Pluto and need to go to Mercury. Take your ship and you have to make decisions on what do to. Moving to another planet will take you electricity. Everyday you need to eat. You can produce food but it needs electricity. Be careful, if you run out of electricity, you cannot move anymore and are stuck in space forever but if you run out of food, you will die. And the clock is ticking, so don't take too much your time. \n\n"
         "HOW TO PLAY: \n    ""It is very intuitive : just answer the questions and make decision based on what is happening. \n\n"
