@@ -35,5 +35,5 @@ All games in this repository are developed in Python. Students were given comple
 Thanks to all the creators for their efforts. The names are listed in alphabetical order by surname.
 
 *J. Alberda, D. Alvarez Corres, M. Boer, L. Burgos Ballester, V. Calvo Tenza, N. Demmenie, B. Dobak
-, B. Flikkema, M. Gerritsen, S. Haag, A. Hreniuc, S. Huijbers, L. Jawinski, L. Klingens, S. Kokkola, N. Krosse, M. Lavik, S. Leszek, N. Stephen, A. Stroeve, L. Suberbere, A. Valmana Perez, A. Vecht, J. Whibley*
+, B. Flikkema, M. Gerritsen, S. Haag, A. Hreniuc, S. Huijbers, L. Jawinski, L. Klingens, S. Kokkola, N. Krosse, M. Lavik, S. Leszek, G. Parra San Pedro, N. Stephen, A. Stroeve, L. Suberbere, A. Valmana Perez, A. Vecht, J. Whibley*
 

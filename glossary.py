@@ -6,6 +6,7 @@ AUTHOR_NAMES: game creator
 GAMES = {
     "Alien Dress-up Game": "game-NK/",
     "Asteroid Game": "game-DAC/",
+    "Big Bang Odyssey": "game-GP",
     "Black Hole Game": "game-SL/",
     "Colour Matcher": "game-MG/",
     "Constellations Quiz": "game-VCT/",
@@ -33,6 +34,7 @@ GAMES = {
 AUTHOR_NAMES = {
     "Alien Dress-up Game": "N. Krosse",
     "Asteroid Game": "D. Alvarez Corres",
+    "Big Bang Odyssey": "G. Parra San Pedro",
     "Black Hole Game": "S. Leszek",
     "Colour Matcher": "M. Gerritsen",
     "Constellations Quiz": "V. Calvo Tenza",
@@ -61,6 +63,10 @@ AUTHOR_NAMES = {
 GAME_INFO = {
     "Alien Dress-up Game": "Make your alien the most stylish lifeform in the quadrant! Swap hairstyles and outfits against the stunning backdrop of the M101 galaxy.",
     "Asteroid Game": "Collect belts while avoiding asteroids that reduce your health. The game ends when your health reaches 0.",
+    "Big Bang Odyssey": "You are the last human alive, far from home and with the only help of A.L.I the artificial intelligence of your ship. The fuel is running out, to earn some you will need to play poker hands and continue your trip, trying to avoid the extinction of the humanity. \n\n"
+        "The game consist in a poker game, where you can play a total of 4 hands (5 cards each) and discard 3 times (5 cards again). You will need to get the best hands in order to win more points and pass to the next level.\n\n"
+        "After each level, an astronomical question is asked, if your answer is right, you will earn more credits; if it is not, nothing will happen. This credits are useful to buy jokers and boosts that will help you during the game.It has 5 rounds, increasing the level of difficulty in each.\n\n"
+        "NOTE: When playing multiple cards, type <space> between each index.",
     "Black Hole Game": "Game inspired by pacman - player uses arrow keys to steer their black hole and eat stars, gathering their mass. User can eat other black holes as long as their black hole has bigger mass. Other black holes are like ghosts in pacman - they can eat you! Win when user absorbs all black holes or stars, or has the most mass of all objects.",
     "Colour Matcher": "In this game, you need to get the same color values as given to you, at the upmost left corner there is a hue that you need to match. (here you can also see the percentage of pixels that are that color). Just move your mouse over the image to get values in the graph and get them inside the range. You can get a new color if this one is too hard or you cannot find it.",
     "Constellations Quiz": "Before playing this little quiz, make sure you are an astronomy lover, above all a constellations freak. Once you satisfy the most important condition, you can start playing it to challenge yourself on your stars knowledge. \n\n"
