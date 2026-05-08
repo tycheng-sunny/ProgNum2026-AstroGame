@@ -19,11 +19,12 @@ All games in this repository are developed in Python. Students were given comple
 
 #### Additional for some games
 - [pygame](https://www.pygame.org/wiki/GettingStarted)
+- [arcade](https://api.arcade.academy/en/3.3.3/get_started/install.html)
 
 ---
 # Credits 
 
 Thanks to all the creators for their efforts. The names are listed in alphabetical order by surname.
 
-*J. Alberda, D. Alvarez Corres, M. Boer, L. Burgos Ballester, V. Calvo Tenza, N. Demmenie, M. Gerritsen, A. Hreniuc, L. Klingens, S. Leszek, L. Suberbere, A. Vecht*
+*J. Alberda, D. Alvarez Corres, M. Boer, L. Burgos Ballester, V. Calvo Tenza, N. Demmenie, M. Gerritsen, A. Hreniuc, L. Klingens, S. Leszek, N. Stephen, L. Suberbere, A. Vecht*
 

@@ -9,6 +9,7 @@ GAMES = {
     "Colour Matcher": "game-MG/",
     "Constellations Quiz": "game-VCT/",
     "Galactic Golf": "game-JA",
+    "Galactic Shooter": "game-NS",
     "Ionise HI Clouds": "game-AH",
     "Management Sim": "game-LBB/",
     "Medicine across the Universe": "game-LS/",
@@ -32,6 +33,7 @@ AUTHOR_NAMES = {
     "Colour Matcher": "M. Gerritsen",
     "Constellations Quiz": "V. Calvo Tenza",
     "Galactic Golf": "J. Alberda",
+    "Galactic Shooter": "N. Stephen",
     "Ionise HI Clouds": "A. Hreniuc",
     "Management Sim": "L. Burgos Ballester",
     "Medicine across the Universe": "L. Suberbere",
@@ -55,6 +57,13 @@ GAME_INFO = {
         "4. Then, repeat until you have learnt all of them \n\n"
         "Good luck guessing and have fun!",
     "Galactic Golf": "This \"game\" is 100% hand coded. AI was only used twice to guide a fix. The goal of the game is to get the spaceship (blue ball) to the core (white dot at centre of screen), while avoiding Lebron. The background is provided by a user-supplied .fits file (feel free to use your own), where the intensities dictate the slowdown of the spaceship. Use the left and right arrow keys to change the direction before shooting. Use the up and down arrow keys to choose the shot power. Press the spacebar to shoot. Try to find all 3 secret achievements.",
+    "Galactic Shooter": "A bullet hell shooter where the player, as Freddy Fazbear IN SPACE, can move around and shoot the enemy m101.fits with beloved ProgNum student Joe, moving throughout a beautiful fits file skyline! Try to score as high as you can by shooting the m101.fits enemies and survive as long as possible!\n\n"
+        "Controls:\n    "
+            "WASD - Move (W - up, A - left, S - down, D - right)\n    "
+            "Space - Shoot the Joe projectiles.\n"
+        "At the game over screen:\n    "
+        "Esc - Exit the game\n    "
+        "R - Restart; start a new round of the game",
     "Ionise HI Clouds": "Choose the photon frequency (energy). By clicking the left mouse, you will shoot photons. The goal is to ionise all the electrons in the window.", 
     "Management Sim": "You are a science project manager, leading expedition amongst different star systems. During the expedition, you can choose to <Survey> the systems, <Mine> useful resources, <Upgrade> anything related to your project, <Scan> the systems, or <Pass>, in this round. When running out funds, morales, or expiry, the game ends.",
     "Medicine across the Universe": "You are on Pluto and need to go to Mercury. Take your ship and you have to make decisions on what do to. Moving to another planet will take you electricity. Everyday you need to eat. You can produce food but it needs electricity. Be careful, if you run out of electricity, you cannot move anymore and are stuck in space forever but if you run out of food, you will die. And the clock is ticking, so don't take too much your time. \n\n"
