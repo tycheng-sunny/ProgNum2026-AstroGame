@@ -28,6 +28,7 @@ GAMES = {
     "Space Rescue Game": "game-ND/",
     "Star Wars": "game-SK/",
     "Sweet Saviour": "game-AV/",
+    "The Planet Defender": "game-SB",
     "Travel to Exoplanet": "game-LJ/",
 }
 
@@ -56,6 +57,7 @@ AUTHOR_NAMES = {
     "Space Rescue Game": "N. Demmenie", 
     "Star Wars": "S. Kokkola",
     "Sweet Saviour": "A. Vecht",
+    "The Planet Defender": "S. Bazigos",
     "Travel to Exoplanet": "L. Jawinski",
 
 }
@@ -111,6 +113,7 @@ GAME_INFO = {
     "Sweet Saviour": "Welcome to SWEET SAVIOUR! \n\n " 
         "A story based astronomy game in which you are tasked to save the world. \n\n"
         "INSTRUCTIONS: During the story's progression you will be presented with questions and dilemma's. Answer correctly or there might be consequences. In total there are 3 differend endings, try to get them all!",
+    "The Planet Defender": "The goal is simple -- it is to defend the Moon, Mars and the Earth which are under attack by many waves of meteors. You are given a ship that can shoot bullets to take down the asteroids. You can move the ship around the planet using the arrows and shoot using the space bar. As the levels progress, so does the gravity of the protected bodies which cause the meteors to fall faster and faster. So in the end, the game can become quite challenging. Astronomical calculations were used to simulate the gravity of the falling meteors however were adjusted by a factor to speed them up otherwise they would appear too slow in game, for the pixel window of the game. The waves of meteors also increase as you progress adding a further difficulty to the game.",
     "Travel to Exoplanet": "In this game, you have to find a password to travel to an exoplanet in a distant galaxy and find a new home for humanity.\n\n"
         "[yellow]IMPORTANT NOTE: Unfortunately, the main image required to run this game was not provided by the creator, so the game is currently unplayable.[/yellow]",
 }
