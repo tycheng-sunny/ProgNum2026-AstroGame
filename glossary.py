@@ -19,6 +19,7 @@ GAMES = {
     "Memorising Galaxies": "game-LK/",
     "New Home": "game-SH/",
     "Save the Ship": "game-MB/",
+    "Solar System Memory Game": "game-SEH/",
     "Space Invaders": "game-ML/",
     "Space Rescue Game": "game-ND/",
     "Star Wars": "game-SK/",
@@ -42,6 +43,7 @@ AUTHOR_NAMES = {
     "Memorising Galaxies": "L. Klingens",
     "New Home": "S. Haag",
     "Save the Ship": "M. Boer",
+    "Solar System Memory Game": "S. Huijbers",
     "Space Invaders": "M. Lavik",
     "Space Rescue Game": "N. Demmenie", 
     "Star Wars": "S. Kokkola",
@@ -81,6 +83,7 @@ GAME_INFO = {
     "Memorising Galaxies": "You have departed Earth and are in a space ship (your call name is Anaconda 7) on a journey. You receive a mission from Earth to find the coordinates of a galaxy, so you can travel to it. By matching two galaxies together, you can obtain the correct coordinates. At the end, you have to enter the coordinates you found. If the coordinates are correct, you can continue your space life as normal, waiting on the next mission. If the coordinates are wrong, you have to restart the game! So be very careful when typing and pay close attention to the mission description!",
     "New Home": "The user chooses a new galaxy and star for humanity, and then creates a planet. If the user is not careful, the planet will not be habitable.",
     "Save the Ship": "In this text-based adventure game, you are in your spacecraft, when the alarms suddenly go off. When you wake up you find out that the ship's systems are failing causing it to become destabilized. The only way you can survive is by restoring the spacecraft yourself. Navigate your way through the ship and solve puzzles to ensure it doesn't go down!",
+    "Solar System Memory Game": "In this game, you can play Memory with the dwarf(planets) of our own Solar System. With an extra easter egg :), one of the planets is not there, can you find it and be the master of our Solar System?",
     "Space Invaders": "Space Invaders. Press <space> to shoot the alien ships.",
     "Space Rescue Game": "Space Rescue is a text-based game where you travel between planets to rescue stranded astronauts. Each trip costs fuel based on distance, and planetary conditions can damage your ship. You collect points and may encounter random events that help or harm you. The goal is to rescue enough astronauts within a limited number of turns while managing your fuel and health.", 
     "Star Wars": "In this game you name and design your own star! Then, you go against other stars. The battle is based on your stars properties. The more superior star will win!\n\n"
