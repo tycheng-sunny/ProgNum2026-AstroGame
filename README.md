@@ -37,7 +37,7 @@ All games in this repository are developed in Python. Students were given comple
 
 # Demo Examples
 
-![Game 43](demo43.gif)
+![Game 43](game43.gif)
 
 ---
 # Credits 
