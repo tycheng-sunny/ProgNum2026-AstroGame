@@ -118,7 +118,7 @@ AUTHOR_NAMES = {
 GAME_INFO = {
     "Alien Dress-up Game": "Make your alien the most stylish lifeform in the quadrant! Swap hairstyles and outfits against the stunning backdrop of the M101 galaxy.",
 
-    "Alien Escape": "xxx",
+    "Alien Escape": "Astronomy quiz.",
 
     "Alien Invasion Prevention": "Game of Alien invasion prevention, you have to find the planet of the aliens before they find us. Data from Gaia was queried. First, you have to enter a correct spectral type, then solve a maths equation and finally solve some anagrams. You only have to input some things. The first will give you 5 possible stars of origin, the second one star with 5 planets and the last one will give you the right planet.",
 
