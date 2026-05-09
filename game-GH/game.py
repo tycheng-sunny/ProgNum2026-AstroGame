@@ -105,7 +105,7 @@ class StarFactory:
         stars = []
         for row in table:
             star = Star(
-                source_id=row['SOURCE_ID'],
+                source_id=row['source_id'],
                 ra=row['ra'],
                 dec=row['dec'],
                 parallax=row['parallax'],

@@ -5,6 +5,7 @@ AUTHOR_NAMES: game creator
 
 GAMES = {
     "Alien Dress-up Game": "game-NK/",
+    "Alien Invasion Prevention": "game-GH/",
     "Asteroid Game": "game-DAC/",
     "Asteroid Storm ": "game-MW/",
     "Astronomy Constellation Quiz": "game-AT/",
@@ -26,6 +27,7 @@ GAMES = {
     "Galaxy Matcher": "game-BD/",
     "Gambling Game": "game-KG/",
     "GeoGuesser": "game-BC/",
+    "Gravitational Slingshot": "game-SZ",
     "HorizonScape": "game-EB/",
     "Intergalactic Travel": "game-AHH/",
     "Ionise HI Clouds": "game-AH/",
@@ -34,12 +36,14 @@ GAMES = {
     "Memorising Galaxies": "game-LK/",
     "New Home": "game-SH/",
     "Planet Explorer": "game-BF/",
+    "Planet Hopper": "game-NiK/",
     "Puzzle Game": "game-AS/",
     "Save the Ship": "game-MB/",
     "Solar System Memory Game": "game-SEH/",
     "Sombrero": "game-OA/",
     "Space Invaders": "game-ML/",
     "Space Rescue Game": "game-ND/",
+    "Space Traveller": "game-CE/",
     "Spaceworm": "game-TB/",
     "Star Explorer": "game-IF/",
     "Star Wars": "game-SK/",
@@ -55,6 +59,7 @@ GAMES = {
 
 AUTHOR_NAMES = {
     "Alien Dress-up Game": "N. Krosse",
+    "Alien Invasion Prevention": "G. Harlaar",
     "Asteroid Game": "D. Alvarez Corres",
     "Asteroid Storm ": "M. Weeren",
     "Astronomy Constellation Quiz": "A. Tarzian",
@@ -76,6 +81,7 @@ AUTHOR_NAMES = {
     "Galaxy Matcher": "B. Dobak",
     "Gambling Game": "K. Godzieba",
     "GeoGuesser": "B. Chylinska",
+    "Gravitational Slingshot": "S. Zhou",
     "HorizonScape": "E. Bartucz",
     "Intergalactic Travel": "A. Hofman",
     "Ionise HI Clouds": "A. Hreniuc",
@@ -84,12 +90,14 @@ AUTHOR_NAMES = {
     "Memorising Galaxies": "L. Klingens",
     "New Home": "S. Haag",
     "Planet Explorer": "B. Flikkema",
+    "Planet Hopper": "N. Kuizenga",
     "Puzzle Game": "A. Stroeve",
     "Save the Ship": "M. Boer",
     "Solar System Memory Game": "S. Huijbers",
     "Sombrero": "O. Assenberg",
     "Space Invaders": "M. Lavik",
     "Space Rescue Game": "N. Demmenie", 
+    "Space Traveller": "C. Eshuis",
     "Spaceworm": "T. Balvin",
     "Star Explorer": "I. Frank",
     "Star Wars": "S. Kokkola",
@@ -105,6 +113,8 @@ AUTHOR_NAMES = {
 
 GAME_INFO = {
     "Alien Dress-up Game": "Make your alien the most stylish lifeform in the quadrant! Swap hairstyles and outfits against the stunning backdrop of the M101 galaxy.",
+
+    "Alien Invasion Prevention": "Game of Alien invasion prevention, you have to find the planet of the aliens before they find us. Data from Gaia was queried. First, you have to enter a correct spectral type, then solve a maths equation and finally solve some anagrams. You only have to input some things. The first will give you 5 possible stars of origin, the second one star with 5 planets and the last one will give you the right planet.",
 
     "Asteroid Game": "Collect belts while avoiding asteroids that reduce your health. The game ends when your health reaches 0.",
 
@@ -181,6 +191,8 @@ GAME_INFO = {
     "GeoGuesser": "Basically geoguesser but with galaxies (unfortunetely only 2). An image will appear in front of you , and your task is to guess what the Galaxy name is from the available options. You might get a fun fact as a reward\n\n"
         "[yellow]IMPORTANT NOTE: Unfortunately, certain documents required to run this game was not provided by the creator, so the game is currently unplayable.[/yellow]",
 
+    "Gravitational Slingshot": "Your ship had exited the hyperspace due to an error and is heading straight to the Jupiter, your goal is to escape from the gravitational field of the Jupiter. You can use left and right arrow key to adjust the angle of your thruster and use either the up arrow or the space key to activate the thruster.",
+
     "HorizonScape": "HorizonScape is an interactive escape game playable on any terminal that can run a python executable script. The user is the captain of a spaceship and has to control it by providing the correct inputs.\n\n"
         "How to play:\n    "
         "The main part of the game is analogous to the popular game ‘Hangman’, where one player thinks of a word and the other guesses it by guessing one letter at a time. In that game, if the guess of player2 is right, player1 shows which letter of the word it is, if not, player1 makes a drawing of a man being hung one line at a time. In HorizonScape, the word is embedded in the code, player1 is therefore the computer, while player2 is the user, who has to guess it one letter at a time. In the case of a correct guess, the position of the letter is shown, otherwise a picture is being shown that decreases in size with each wrong guess.\n    "
@@ -199,7 +211,11 @@ GAME_INFO = {
     "Memorising Galaxies": "You have departed Earth and are in a space ship (your call name is Anaconda 7) on a journey. You receive a mission from Earth to find the coordinates of a galaxy, so you can travel to it. By matching two galaxies together, you can obtain the correct coordinates. At the end, you have to enter the coordinates you found. If the coordinates are correct, you can continue your space life as normal, waiting on the next mission. If the coordinates are wrong, you have to restart the game! So be very careful when typing and pay close attention to the mission description!",
 
     "New Home": "The user chooses a new galaxy and star for humanity, and then creates a planet. If the user is not careful, the planet will not be habitable.",
+
     "Planet Explorer": "In this game you are going on a journey across the stars. You are a discovering astronaut and you are going to fly to a planet and make discoveries about the planet. You are given choices upon landing, choices which will have consequences, some may be good, some may be bad. At a first playthrough you might not get a positive outcome, but worry not, you can always play again!",
+
+    "Planet Hopper": "Its a game about travelling to all the planets in our solar system. But you don't have enough fuel so at each planet you have to answer a question, if you answer correctly you get enough fuel to go to the next planet. And if you answer wrong, you get hit by a meteorite and send back to the previous planet. When you get hit 3 times your ship explodes and you are GAME OVER.\n\n"
+        "It works by first entering your name, and then you get a bit of story. And then you keep getting multiple choice questions, which you answer by writing the number 1-4.",
 
     "Puzzle Game": "Try to put the pieces in the right place!",
 
@@ -214,6 +230,8 @@ GAME_INFO = {
     "Space Invaders": "Space Invaders. Press <space> to shoot the alien ships.",
 
     "Space Rescue Game": "Space Rescue is a text-based game where you travel between planets to rescue stranded astronauts. Each trip costs fuel based on distance, and planetary conditions can damage your ship. You collect points and may encounter random events that help or harm you. The goal is to rescue enough astronauts within a limited number of turns while managing your fuel and health.", 
+
+    "Space Traveller": "The goal of the game is to travel to space and discover different exoplanets. However, you need to pay attention to your fuel tank. The further a planet is, the more fuel it costs. The bigger the size of the exoplanets, the more points you get for visiting it. Because I don't like death, I don't support that in this game :), so after some travelling, at some point you will notice you get the warning that the exoplanets are all without reach. This will force you to safely return home and enjoy the happy ending.",
 
     "Spaceworm": "In the dark, vast regions of space...\n\n"
         "You are a very hungry spaceworm, traveling through mostly empty space. Occasionally though, you stumble on beautiful bright stars, ripe with thermonuclear fusion and ready for you to eat!\n\n"
