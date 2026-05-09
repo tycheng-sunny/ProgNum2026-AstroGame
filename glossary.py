@@ -37,6 +37,7 @@ GAMES = {
     "Space Invaders": "game-ML/",
     "Space Rescue Game": "game-ND/",
     "Star Wars": "game-SK/",
+    "Stellar Evolution Simulator": "game-GK/",
     "Sweet Saviour": "game-AV/",
     "The Planet Defender": "game-SB",
     "Tim Shooter Game": "game-YM",
@@ -79,6 +80,7 @@ AUTHOR_NAMES = {
     "Space Invaders": "M. Lavik",
     "Space Rescue Game": "N. Demmenie", 
     "Star Wars": "S. Kokkola",
+    "Stellar Evolution Simulator": "G. Ketchum",
     "Sweet Saviour": "A. Vecht",
     "The Planet Defender": "S. Bazigos",
     "Tim Shooter Game": "Y. Mesu",
@@ -194,6 +196,10 @@ GAME_INFO = {
         "3. The game gives you a random star to fight against.\n    "
         "4. Choose an approach: Aggressive, Evasive or Balanced. In aggressive, the mass of the stars matters most. In evasive, your velocity matters most. In balanced, all properties matter.\n    "
         "5. Your success depends on your stars properties against the other stars properties. If you win, you can choose to continue paying. If you lose, game is over and you can restart.",
+
+    "Stellar Evolution Simulator": "Take a journey along an HR diagram by helping a star achieve its dream! The player gets to pick between a sun-like star and a massive star, which give two different game paths. The player will receive a trivia question at each step of the stellar evolution ladder, and have two attempts at answering it in order to progress.\n\n"
+        "In order to play the game, the player must input the correct answer to astronomy trivia questions (related to the stage of stellar evolution that the star is at). In order to play it correctly on terminal, the player needs to close the plotted HR diagrams before moving onto the next part of the game. the player should also put a space before each of its answers, due to the way terminal processes the input.\n\n"
+        "Enjoy the game!",
 
     "Sweet Saviour": "Welcome to SWEET SAVIOUR! \n\n " 
         "A story based astronomy game in which you are tasked to save the world. \n\n"
