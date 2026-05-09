@@ -43,6 +43,9 @@ All games in this repository are developed in Python. Students were given comple
 #### Game 12: Colour Matcher 
 <img src="demo/game12.gif" width="80%" height="50%"/>
 
+#### Game 31: Memorising Galaxies
+<img src="demo/game31.gif" width="50%" height="50%"/>
+
 #### Game 43: Spaceworm 
 <img src="demo/game43.gif" width="50%" height="50%"/>
 
