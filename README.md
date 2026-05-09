@@ -13,7 +13,11 @@ Download the repository, move to the repository, and run the following command i
 ```python
 python launcher.py
 ```
-You will then see the game launcher interface. Enter the number corresponding to the game you would like to play and enjoy!
+You will then see the game launcher interface. 
+
+![](launcher_interface.png)
+
+Enter the number corresponding to the game you would like to play and enjoy!
 
 
 ### Requirement
@@ -36,6 +40,6 @@ All games in this repository are developed in Python. Students were given comple
 
 Thanks to all the creators for their efforts. The names are listed in alphabetical order by surname.
 
-*J. Alberda, D. Alvarez Corres, S. Arentsen, O. Assenberg, H. Atela Gonzalez, M. Bakelaar, B. Balas, T. Balvin, E. Bartucz, S. Bazigos, M. Boer, L. Burgos Ballester, V. Calvo Tenza, B. Chylinska, N. Demmenie, B. Dobak, C. Eshuis, I. Figueiro, B. Flikkema, I. Frank, M. Gerritsen, K. Godzieba, S. Haag, G. Harlaar, A. Hofman, A. Hreniuc, S. Huijbers, L. Jawinski, G. Ketchum, L. Klingens, S. Kokkola, N. Kuizenga, N. Krosse, M. Lavik, S. Leszek, I. Mazzei Braschi, Y. Mesu, L. Mispelaar, W. Oosterhof, A. Pafitis, G. Parra San Pedro, M. Rosberg, N. Stephen, A. Stroeve, L. Suberbere, A. Tarzian, A. Valmana Perez, A. Vecht, M. Weeren, J. Whibley, S. Zhou*
+*J. Alberda, D. Alvarez Corres, S. Arentsen, O. Assenberg, H. Atela Gonzalez, M. Bakelaar, B. Balas, T. Balvin, E. Bartucz, S. Bazigos, M. Boer, L. Burgos Ballester, V. Calvo Tenza, B. Chylinska, N. Demmenie, B. Dobak, C. Eshuis, I. Figueiro, B. Flikkema, I. Frank, M. Gerritsen, K. Godzieba, S. Haag, G. Harlaar, A. Hofman, A. Hreniuc, S. Huijbers, L. Jawinski, G. Ketchum, S. Kiewiet, L. Klingens, S. Kokkola, N. Kuizenga, N. Krosse, M. Lavik, S. Leszek, I. Mazzei Braschi, D. Meindertsma, Y. Mesu, L. Mispelaar, W. Oosterhof, A. Pafitis, G. Parra San Pedro, M. Rosberg, N. Stephen, A. Stroeve, L. Suberbere, A. Tarzian, A. Valmana Perez, A. Vecht, M. Weeren, J. Whibley, S. Zhou*
 
 

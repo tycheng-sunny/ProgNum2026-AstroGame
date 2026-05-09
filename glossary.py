@@ -5,6 +5,7 @@ AUTHOR_NAMES: game creator
 
 GAMES = {
     "Alien Dress-up Game": "game-NK/",
+    "Alien Escape": "game-DM",
     "Alien Invasion Prevention": "game-GH/",
     "Asteroid Game": "game-DAC/",
     "Asteroid Storm ": "game-MW/",
@@ -35,6 +36,7 @@ GAMES = {
     "Medicine across the Universe": "game-LS/",
     "Memorising Galaxies": "game-LK/",
     "New Home": "game-SH/",
+    "NSCM": "game-SjK/",
     "Planet Explorer": "game-BF/",
     "Planet Hopper": "game-NiK/",
     "Puzzle Game": "game-AS/",
@@ -59,6 +61,7 @@ GAMES = {
 
 AUTHOR_NAMES = {
     "Alien Dress-up Game": "N. Krosse",
+    "Alien Escape": "D. Meindertsma",
     "Alien Invasion Prevention": "G. Harlaar",
     "Asteroid Game": "D. Alvarez Corres",
     "Asteroid Storm ": "M. Weeren",
@@ -89,6 +92,7 @@ AUTHOR_NAMES = {
     "Medicine across the Universe": "L. Suberbere",
     "Memorising Galaxies": "L. Klingens",
     "New Home": "S. Haag",
+    "NSCM": "S. Kiewiet",
     "Planet Explorer": "B. Flikkema",
     "Planet Hopper": "N. Kuizenga",
     "Puzzle Game": "A. Stroeve",
@@ -113,6 +117,8 @@ AUTHOR_NAMES = {
 
 GAME_INFO = {
     "Alien Dress-up Game": "Make your alien the most stylish lifeform in the quadrant! Swap hairstyles and outfits against the stunning backdrop of the M101 galaxy.",
+
+    "Alien Escape": "xxx",
 
     "Alien Invasion Prevention": "Game of Alien invasion prevention, you have to find the planet of the aliens before they find us. Data from Gaia was queried. First, you have to enter a correct spectral type, then solve a maths equation and finally solve some anagrams. You only have to input some things. The first will give you 5 possible stars of origin, the second one star with 5 planets and the last one will give you the right planet.",
 
@@ -211,6 +217,8 @@ GAME_INFO = {
     "Memorising Galaxies": "You have departed Earth and are in a space ship (your call name is Anaconda 7) on a journey. You receive a mission from Earth to find the coordinates of a galaxy, so you can travel to it. By matching two galaxies together, you can obtain the correct coordinates. At the end, you have to enter the coordinates you found. If the coordinates are correct, you can continue your space life as normal, waiting on the next mission. If the coordinates are wrong, you have to restart the game! So be very careful when typing and pay close attention to the mission description!",
 
     "New Home": "The user chooses a new galaxy and star for humanity, and then creates a planet. If the user is not careful, the planet will not be habitable.",
+
+    "NSCM": "NSCM (Northern Sky Constellation Memorization). The game is self-explanatory.",
 
     "Planet Explorer": "In this game you are going on a journey across the stars. You are a discovering astronaut and you are going to fly to a planet and make discoveries about the planet. You are given choices upon landing, choices which will have consequences, some may be good, some may be bad. At a first playthrough you might not get a positive outcome, but worry not, you can always play again!",
 
