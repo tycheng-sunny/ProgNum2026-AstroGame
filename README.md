@@ -40,6 +40,9 @@ All games in this repository are developed in Python. Students were given comple
 #### Game 10: Big Bang Odyssey 
 <img src="demo/game10.gif" width="80%" height="50%"/>
 
+#### Game 12: Colour Matcher 
+<img src="demo/game12.gif" width="80%" height="50%"/>
+
 #### Game 43: Spaceworm 
 <img src="demo/game43.gif" width="50%" height="50%"/>
 
