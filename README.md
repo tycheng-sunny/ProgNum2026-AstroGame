@@ -38,7 +38,7 @@ All games in this repository are developed in Python. Students were given comple
 # Demo Examples
 
 #### Game 10: Big Bang Odyssey 
-<img src="demo/game10.gif" width="50%" height="50%"/>
+<img src="demo/game10.gif" width="100%" height="80%"/>
 
 #### Game 43: Spaceworm 
 <img src="demo/game43.gif" width="50%" height="50%"/>
