@@ -6,6 +6,7 @@ AUTHOR_NAMES: game creator
 GAMES = {
     "Alien Dress-up Game": "game-NK/",
     "Asteroid Game": "game-DAC/",
+    "Astronomy Constellation Quiz": "game-AT/",
     "Astroscanner": "game-AP/",
     "Astro Quiz": "game-IM",
     "Big Bang Odyssey": "game-GP",
@@ -43,6 +44,7 @@ GAMES = {
 AUTHOR_NAMES = {
     "Alien Dress-up Game": "N. Krosse",
     "Asteroid Game": "D. Alvarez Corres",
+    "Astronomy Constellation Quiz": "A. Tarzian",
     "Astroscanner": "A. Pafitis",
     "Astro Quiz": "I. Mazzei Braschi",
     "Big Bang Odyssey": "G. Parra San Pedro",
@@ -80,6 +82,15 @@ AUTHOR_NAMES = {
 GAME_INFO = {
     "Alien Dress-up Game": "Make your alien the most stylish lifeform in the quadrant! Swap hairstyles and outfits against the stunning backdrop of the M101 galaxy.",
     "Asteroid Game": "Collect belts while avoiding asteroids that reduce your health. The game ends when your health reaches 0.",
+    "Astronomy Constellation Quiz": "Astronomy Constellation Quiz\n\n"
+        "This game shows constellation images and asks the user to type their names. (First letter is capital.)\n\n"
+        "Rules:\n\n    "
+        "- 20 random questions from 31 constellations\n    "
+        "- Case-sensitive answers\n    "
+        "- 3 attempts per question\n    "
+        "- \"SKIP\" skips the question\n    "
+        "- Timer limits total game time\n\n"
+        "Dataset: All astronomical images are taken from kaggle: https://www.kaggle.com/datasets/theprakharsrivastava/stargazer",
     "Astroscanner": "You are in a 11x11 galaxy and your goal is to scan correctly 3 stars to be sent home. You can move up, down, left and right and you will be notified when you find a star, after which you have to guess which star it is based on its temperature.",
     "Big Bang Odyssey": "You are the last human alive, far from home and with the only help of A.L.I the artificial intelligence of your ship. The fuel is running out, to earn some you will need to play poker hands and continue your trip, trying to avoid the extinction of the humanity. \n\n"
         "The game consist in a poker game, where you can play a total of 4 hands (5 cards each) and discard 3 times (5 cards again). You will need to get the best hands in order to win more points and pass to the next level.\n\n"
