@@ -23,7 +23,7 @@ def game_ownership(game_name):
                 , title="About the Game"))
 
 def show_launcher(game_names):
-    ncols, nrows = 5, 11
+    ncols, nrows = 4, 14
     table = Table(show_header=False, box=None, pad_edge=False)
 
     # Create 5 columns

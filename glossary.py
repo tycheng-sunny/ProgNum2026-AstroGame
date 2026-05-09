@@ -6,25 +6,29 @@ AUTHOR_NAMES: game creator
 GAMES = {
     "Alien Dress-up Game": "game-NK/",
     "Asteroid Game": "game-DAC/",
+    "Asteroid Storm ": "game-MW/",
     "Astronomy Constellation Quiz": "game-AT/",
     "Astroscanner": "game-AP/",
-    "Astro Quiz": "game-IM",
-    "Big Bang Odyssey": "game-GP",
+    "Astro Escape": "game-WO/",
+    "Astro Quiz": "game-IM/",
+    "Big Bang Odyssey": "game-GP/",
     "Black Hole Game": "game-SL/",
     "Colour Matcher": "game-MG/",
     "Constellations Quiz": "game-VCT/",
     "Constellation Guessing Game": "game-JW/",
-    "Cosmic Deal or No Deal": "game-MR",
+    "Cosmic Deal or No Deal": "game-MR/",
+    "Escape Room": "game-LM/",
     "Exoplanet Game": "game-HG/",
     "Galactic Golf": "game-JA/",
-    "Galactic Shooter": "game-NS.",
-    "Galaxy Finder": "game-AVP",
+    "Galactic Shooter": "game-NS/",
+    "Galaxy Dating Simulator": "game-IPF/",
+    "Galaxy Finder": "game-AVP/",
     "Galaxy Matcher": "game-BD/",
     "Gambling Game": "game-KG/",
     "GeoGuesser": "game-BC/",
     "HorizonScape": "game-EB/",
     "Intergalactic Travel": "game-AHH/",
-    "Ionise HI Clouds": "game-AH",
+    "Ionise HI Clouds": "game-AH/",
     "Management Sim": "game-LBB/",
     "Medicine across the Universe": "game-LS/",
     "Memorising Galaxies": "game-LK/",
@@ -42,18 +46,20 @@ GAMES = {
     "Stellar Evolution Simulator": "game-GK/",
     "Sunglasses in Space": "game-SA/",
     "Sweet Saviour": "game-AV/",
-    "The Planet Defender": "game-SB",
-    "Tim Shooter Game": "game-YM",
+    "The Planet Defender": "game-SB/",
+    "Tim Shooter Game": "game-YM/",
     "Travel to Exoplanet": "game-LJ/",
     "Virtual Telescope Project": "game-BB/",
-    "Voyage": "game-MDB",
+    "Voyage": "game-MDB/",
 }
 
 AUTHOR_NAMES = {
     "Alien Dress-up Game": "N. Krosse",
     "Asteroid Game": "D. Alvarez Corres",
+    "Asteroid Storm ": "M. Weeren",
     "Astronomy Constellation Quiz": "A. Tarzian",
     "Astroscanner": "A. Pafitis",
+    "Astro Escape": "W. Oosterhof",
     "Astro Quiz": "I. Mazzei Braschi",
     "Big Bang Odyssey": "G. Parra San Pedro",
     "Black Hole Game": "S. Leszek",
@@ -61,9 +67,11 @@ AUTHOR_NAMES = {
     "Constellations Quiz": "V. Calvo Tenza",
     "Constellation Guessing Game": "J. Whibley",
     "Cosmic Deal or No Deal": "M. Rosberg",
+    "Escape Room": "L. Mispelaar",
     "Exoplanet Game": "H. Atela Gonzalez",
     "Galactic Golf": "J. Alberda",
     "Galactic Shooter": "N. Stephen",
+    "Galaxy Dating Simulator": "I. Figueiro",
     "Galaxy Finder": "A. Valmana Perez",
     "Galaxy Matcher": "B. Dobak",
     "Gambling Game": "K. Godzieba",
@@ -100,6 +108,8 @@ GAME_INFO = {
 
     "Asteroid Game": "Collect belts while avoiding asteroids that reduce your health. The game ends when your health reaches 0.",
 
+    "Asteroid Storm ": "An asteroid storm is traveling through the solar system. To survive, you need to escape your current celestial body by using the \"A\" and \"D\" to evade the incoming asteroids. There are 4 different levels. To continue to the next level, you need to survive 15 seconds. Each level is of increasing difficulty: the higher the level, the more asteroids spawn in and the faster they accelerate (the acceleration corresponds with the planet of the level). You can press \"escape\" to quit the game and after you lost you can press \"R\" to restart.",
+
     "Astronomy Constellation Quiz": "Astronomy Constellation Quiz\n\n"
         "This game shows constellation images and asks the user to type their names. (First letter is capital.)\n\n"
         "Rules:\n\n    "
@@ -111,6 +121,10 @@ GAME_INFO = {
         "Dataset: All astronomical images are taken from kaggle: https://www.kaggle.com/datasets/theprakharsrivastava/stargazer",
 
     "Astroscanner": "You are in a 11x11 galaxy and your goal is to scan correctly 3 stars to be sent home. You can move up, down, left and right and you will be notified when you find a star, after which you have to guess which star it is based on its temperature.",
+
+    "Astro Escape": "Instructions are in the game itself. The game is an escape room. You'll have to launch your friends rocketship, but the phone connection with your friend goes static. How will you now launch the rocket now? What are your choices?\n\n"
+        "The choices being processed through inputting A, B, etc for all options, which are automatically translated to uppercase and all spaces are taken away from it.\n\n"
+        "The astronomy data used is the Hubble constant from week 3 and the masses of the planets from Nasa.",
 
     "Astro Quiz": "To play the game, you just input your name and start answering questions and learn about astronomy.",
 
@@ -140,6 +154,9 @@ GAME_INFO = {
         "The game is very simple to play. First you select a number from 0-9, typing it into the command line. Once the case is selected, you are shown a list of numbers you still haven't selected/opened. These cases can be opened by typing one of the remaining numbers from the list. (This list updates every time a case is opened, so no need to worry about losing track of what cases were opened already.)\n\n    "
         "Once the banker calls, you can either type \"deal\" or \"no\" depending on if you accept the Deal or not. This depends on how much you want to risk or how much the dealer offers. To make sure the person knows the items they're playing for, a list of cosmic objects are shown at the start with their according mass, ranging from lowest (Asteroid) to largest (Andromeda).",
 
+    "Escape Room": "Here is a game inspired by how the autopilot in outer wilds flew me into the sun.\n\n"
+        "[yellow]There is a file missed by the creator -- the room number is 3679[/yellow]",
+
     "Exoplanet Game": "Make a judgement if a planet is habitable or not. If yes, one can deploy a probe; if not, one can skip it. Find sufficient number of habitable exoplanets to succeed the mission.",
 
     "Galactic Golf": "This \"game\" is 100% hand coded. AI was only used twice to guide a fix. The goal of the game is to get the spaceship (blue ball) to the core (white dot at centre of screen), while avoiding Lebron. The background is provided by a user-supplied .fits file (feel free to use your own), where the intensities dictate the slowdown of the spaceship. Use the left and right arrow keys to change the direction before shooting. Use the up and down arrow keys to choose the shot power. Press the spacebar to shoot. Try to find all 3 secret achievements.",
@@ -151,6 +168,9 @@ GAME_INFO = {
         "At the game over screen:\n    "
         "Esc - Exit the game\n    "
         "R - Restart; start a new round of the game",
+
+    "Galaxy Dating Simulator": "A nice and cozy galactic experience where you are presented with three fine galactic options as an interest.\n\n"
+        "\"Second worst game I have ever played, would recommend it \" - TA review",
 
     "Galaxy Finder": "Space Invaders variation 'Galaxy Finder'. You shoot a beam and catalogue each galaxy. Game ends when all galaxies in the Local Group are added or a galaxy escapes the range of the beam (goes off-limits).",
 

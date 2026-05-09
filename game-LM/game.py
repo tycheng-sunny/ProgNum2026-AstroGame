@@ -58,8 +58,9 @@ print("Aha, so maybe the yellow dot is the cockpit? It won't do harm to take a l
 
 
 import numpy as np
-txt = np.loadtxt('rooms')
-print(txt)
+# Edited by SunnyC 9 May 2026, due to a missing file: "rooms".
+#txt = np.loadtxt('rooms')
+#print(txt)
 
 
 # In[ ]:
@@ -118,7 +119,7 @@ print("But what is his favourite galaxy? Well, there are a few options:")
 # In[ ]:
 
 
-Fav_galaxies = {'Milky Way', 'm101', 'Andromeda Galaxy', 'ngc6946'}
+Fav_galaxies = ['Milky Way', 'm101', 'Andromeda Galaxy', 'ngc6946']
 
 
 # In[10]:
@@ -126,7 +127,7 @@ Fav_galaxies = {'Milky Way', 'm101', 'Andromeda Galaxy', 'ngc6946'}
 
 print("In order to remind himself he has written down an equation to remember the index.")
 
-print(f"favourite galaxy = (1 + 2i)^2 \ i + 1 - (2 + 3i)")
+print(f"favourite galaxy = (1 + 2i)^2 / i + 1 - (2 + 3i)")
 
 
 # In[ ]:
@@ -139,6 +140,7 @@ print("That should give it away, shouldn't it? You can decide to do it all in on
 
 
 galaxy = input('The right galaxy is: ')
+galaxy = Fav_galaxies[int(galaxy)] # Edited by SunnyC, 9 May 2026
 if galaxy == ans_galaxy:
     print("Yes! That's correct")
 else:
