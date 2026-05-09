@@ -36,6 +36,7 @@ GAMES = {
     "Sombrero": "game-OA/",
     "Space Invaders": "game-ML/",
     "Space Rescue Game": "game-ND/",
+    "Spaceworm": "game-TB/",
     "Star Wars": "game-SK/",
     "Stellar Evolution Simulator": "game-GK/",
     "Sweet Saviour": "game-AV/",
@@ -79,6 +80,7 @@ AUTHOR_NAMES = {
     "Sombrero": "O. Assenberg",
     "Space Invaders": "M. Lavik",
     "Space Rescue Game": "N. Demmenie", 
+    "Spaceworm": "T. Balvin",
     "Star Wars": "S. Kokkola",
     "Stellar Evolution Simulator": "G. Ketchum",
     "Sweet Saviour": "A. Vecht",
@@ -188,6 +190,11 @@ GAME_INFO = {
     "Space Invaders": "Space Invaders. Press <space> to shoot the alien ships.",
 
     "Space Rescue Game": "Space Rescue is a text-based game where you travel between planets to rescue stranded astronauts. Each trip costs fuel based on distance, and planetary conditions can damage your ship. You collect points and may encounter random events that help or harm you. The goal is to rescue enough astronauts within a limited number of turns while managing your fuel and health.", 
+
+    "Spaceworm": "In the dark, vast regions of space...\n\n"
+        "You are a very hungry spaceworm, traveling through mostly empty space. Occasionally though, you stumble on beautiful bright stars, ripe with thermonuclear fusion and ready for you to eat!\n\n"
+        "In spirit of the retro Snake game, use the arrow keys to move around a square region of space and eat the stars! Be careful - you cannot hit the edges of the screen or yourself. If you do die, the game gives you some fun information about the star you failed to consume before your death.\n\n"
+        "Try to grow as much as you can, learn some facts about stars you can see in the night sky, and most importantly, have fun!",
 
     "Star Wars": "In this game you name and design your own star! Then, you go against other stars. The battle is based on your stars properties. The more superior star will win!\n\n"
         "Instructions:\n    "
