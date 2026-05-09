@@ -31,6 +31,7 @@ GAMES = {
     "Sweet Saviour": "game-AV/",
     "The Planet Defender": "game-SB",
     "Travel to Exoplanet": "game-LJ/",
+    "Virtual Telescope Project": "game-BB/",
 }
 
 AUTHOR_NAMES = {
@@ -61,7 +62,7 @@ AUTHOR_NAMES = {
     "Sweet Saviour": "A. Vecht",
     "The Planet Defender": "S. Bazigos",
     "Travel to Exoplanet": "L. Jawinski",
-
+    "Virtual Telescope Project": "B. Balas",
 }
 
 GAME_INFO = {
@@ -119,4 +120,11 @@ GAME_INFO = {
     "The Planet Defender": "The goal is simple -- it is to defend the Moon, Mars and the Earth which are under attack by many waves of meteors. You are given a ship that can shoot bullets to take down the asteroids. You can move the ship around the planet using the arrows and shoot using the space bar. As the levels progress, so does the gravity of the protected bodies which cause the meteors to fall faster and faster. So in the end, the game can become quite challenging. Astronomical calculations were used to simulate the gravity of the falling meteors however were adjusted by a factor to speed them up otherwise they would appear too slow in game, for the pixel window of the game. The waves of meteors also increase as you progress adding a further difficulty to the game.",
     "Travel to Exoplanet": "In this game, you have to find a password to travel to an exoplanet in a distant galaxy and find a new home for humanity.\n\n"
         "[yellow]IMPORTANT NOTE: Unfortunately, the main image required to run this game was not provided by the creator, so the game is currently unplayable.[/yellow]",
+    "Virtual Telescope Project": "Have you ever dreamt of owning a seestar telescope? (Just to clarify, I haven't.) Then you will definitely enjoy the Virtual Telescope Project VTP! With VTP you can control a virtual telescope located in Groningen, look for interesting targets around the sky (if they are visible, of course) and observe them using ESA Skyview.\n\n"
+        "IMPORTANT!\n    "
+            "So far the input variables (Right Ascension,Declination, Field of View) are only accepted in degree units. The telescope might start making very strange movement while changinig target. Do not worry, the result will be the one given, debugging is still in progress.\n\n"
+        "HOW TO PLAY\n    "
+            "There are three Entries where you can enter celestial coordinates to point the telescope onto. Then by pressing Go to target you can change the telescope's position. You also can start an observation by pressing Start observation. Also, you can turn on and off the telescope's ability to keep track of the position it is in by pressing Tracking ON/OFF.\n\n"
+        "RECENT BUG FIXES\n    "
+            "Telescope cannot observe below the horizon. Right Ascension calculation result in the right value",
 }
