@@ -11,8 +11,9 @@ GAMES = {
     "Colour Matcher": "game-MG/",
     "Constellations Quiz": "game-VCT/",
     "Constellation Guessing Game": "game-JW/",
-    "Galactic Golf": "game-JA",
-    "Galactic Shooter": "game-NS",
+    "Exoplanet Game": "game-HG/",
+    "Galactic Golf": "game-JA/",
+    "Galactic Shooter": "game-NS.",
     "Galaxy Finder": "game-AVP",
     "Galaxy Matcher": "game-BD/",
     "Ionise HI Clouds": "game-AH",
@@ -40,6 +41,7 @@ AUTHOR_NAMES = {
     "Colour Matcher": "M. Gerritsen",
     "Constellations Quiz": "V. Calvo Tenza",
     "Constellation Guessing Game": "J. Whibley",
+    "Exoplanet Game": "H. Atela Gonzalez",
     "Galactic Golf": "J. Alberda",
     "Galactic Shooter": "N. Stephen",
     "Galaxy Finder": "A. Valmana Perez",
@@ -80,6 +82,7 @@ GAME_INFO = {
         "Good luck guessing and have fun!",
     "Constellation Guessing Game": "Follow the instructions to guess which constellation is being shown!\n\n"
     "[yellow]IMPORTANT NOTE: While the game itself is functional and fun to play, the intended final result cannot be fully presented because the image folder required by the game was not provided by the creator.[/yellow]",
+    "Exoplanet Game": "Make a judgement if a planet is habitable or not. If yes, one can deploy a probe; if not, one can skip it. Find sufficient number of habitable exoplanets to succeed the mission.",
     "Galactic Golf": "This \"game\" is 100% hand coded. AI was only used twice to guide a fix. The goal of the game is to get the spaceship (blue ball) to the core (white dot at centre of screen), while avoiding Lebron. The background is provided by a user-supplied .fits file (feel free to use your own), where the intensities dictate the slowdown of the spaceship. Use the left and right arrow keys to change the direction before shooting. Use the up and down arrow keys to choose the shot power. Press the spacebar to shoot. Try to find all 3 secret achievements.",
     "Galactic Shooter": "A bullet hell shooter where the player, as Freddy Fazbear IN SPACE, can move around and shoot the enemy m101.fits with beloved ProgNum student Joe, moving throughout a beautiful fits file skyline! Try to score as high as you can by shooting the m101.fits enemies and survive as long as possible!\n\n"
         "Controls:\n    "
