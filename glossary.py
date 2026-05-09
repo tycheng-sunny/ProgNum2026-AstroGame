@@ -7,16 +7,19 @@ GAMES = {
     "Alien Dress-up Game": "game-NK/",
     "Asteroid Game": "game-DAC/",
     "Astroscanner": "game-AP/",
+    "Astro Quiz": "game-IM",
     "Big Bang Odyssey": "game-GP",
     "Black Hole Game": "game-SL/",
     "Colour Matcher": "game-MG/",
     "Constellations Quiz": "game-VCT/",
     "Constellation Guessing Game": "game-JW/",
+    "Cosmic Deal or No Deal": "game-MR",
     "Exoplanet Game": "game-HG/",
     "Galactic Golf": "game-JA/",
     "Galactic Shooter": "game-NS.",
     "Galaxy Finder": "game-AVP",
     "Galaxy Matcher": "game-BD/",
+    "GeoGuesser": "game-BC",
     "Ionise HI Clouds": "game-AH",
     "Management Sim": "game-LBB/",
     "Medicine across the Universe": "game-LS/",
@@ -41,16 +44,19 @@ AUTHOR_NAMES = {
     "Alien Dress-up Game": "N. Krosse",
     "Asteroid Game": "D. Alvarez Corres",
     "Astroscanner": "A. Pafitis",
+    "Astro Quiz": "I. Mazzei Braschi",
     "Big Bang Odyssey": "G. Parra San Pedro",
     "Black Hole Game": "S. Leszek",
     "Colour Matcher": "M. Gerritsen",
     "Constellations Quiz": "V. Calvo Tenza",
     "Constellation Guessing Game": "J. Whibley",
+    "Cosmic Deal or No Deal": "M. Rosberg",
     "Exoplanet Game": "H. Atela Gonzalez",
     "Galactic Golf": "J. Alberda",
     "Galactic Shooter": "N. Stephen",
     "Galaxy Finder": "A. Valmana Perez",
     "Galaxy Matcher": "B. Dobak",
+    "GeoGuesser": "B. Chylinska",
     "Ionise HI Clouds": "A. Hreniuc",
     "Management Sim": "L. Burgos Ballester",
     "Medicine across the Universe": "L. Suberbere",
@@ -79,6 +85,7 @@ GAME_INFO = {
         "The game consist in a poker game, where you can play a total of 4 hands (5 cards each) and discard 3 times (5 cards again). You will need to get the best hands in order to win more points and pass to the next level.\n\n"
         "After each level, an astronomical question is asked, if your answer is right, you will earn more credits; if it is not, nothing will happen. This credits are useful to buy jokers and boosts that will help you during the game.It has 5 rounds, increasing the level of difficulty in each.\n\n"
         "NOTE: When playing multiple cards, type <space> between each index.",
+    "Astro Quiz": "To play the game, you just input your name and start answering questions and learn about astronomy.",
     "Black Hole Game": "Game inspired by pacman - player uses arrow keys to steer their black hole and eat stars, gathering their mass. User can eat other black holes as long as their black hole has bigger mass. Other black holes are like ghosts in pacman - they can eat you! Win when user absorbs all black holes or stars, or has the most mass of all objects.",
     "Colour Matcher": "In this game, you need to get the same color values as given to you, at the upmost left corner there is a hue that you need to match. (here you can also see the percentage of pixels that are that color). Just move your mouse over the image to get values in the graph and get them inside the range. You can get a new color if this one is too hard or you cannot find it.",
     "Constellations Quiz": "Before playing this little quiz, make sure you are an astronomy lover, above all a constellations freak. Once you satisfy the most important condition, you can start playing it to challenge yourself on your stars knowledge. \n\n"
@@ -89,7 +96,13 @@ GAME_INFO = {
         "4. Then, repeat until you have learnt all of them \n\n"
         "Good luck guessing and have fun!",
     "Constellation Guessing Game": "Follow the instructions to guess which constellation is being shown!\n\n"
-    "[yellow]IMPORTANT NOTE: While the game itself is functional and fun to play, the intended final result cannot be fully presented because the image folder required by the game was not provided by the creator.[/yellow]",
+        "[yellow]IMPORTANT NOTE: While the game itself is functional and fun to play, the intended final result cannot be fully presented because the image folder required by the game was not provided by the creator.[/yellow]",
+    "Cosmic Deal or No Deal": "COSMIC DEAL OR NO DEAL\n\n    "
+        "A classic game of Deal or No Deal; however with a cosmic twist. Instead of trying to earn as much money as possible, the goal is to get the highest amount of mass possible.\n\n    "
+        "First, you select a case you will keep until the end and the premise is to open cases, hoping that the cases contain low-mass objects. Every 3 rounds, the banker calls, offering you a certain amount of mass. It's your choice if you accept it (Deal) or not (No Deal). The game ends either by taking a deal from the banker or until the final case is opened, revealing what case you have.\n\n"
+        "HOW TO PLAY\n\n    "
+        "The game is very simple to play. First you select a number from 0-9, typing it into the command line. Once the case is selected, you are shown a list of numbers you still haven't selected/opened. These cases can be opened by typing one of the remaining numbers from the list. (This list updates every time a case is opened, so no need to worry about losing track of what cases were opened already.)\n\n    "
+        "Once the banker calls, you can either type \"deal\" or \"no\" depending on if you accept the Deal or not. This depends on how much you want to risk or how much the dealer offers. To make sure the person knows the items they're playing for, a list of cosmic objects are shown at the start with their according mass, ranging from lowest (Asteroid) to largest (Andromeda).",
     "Exoplanet Game": "Make a judgement if a planet is habitable or not. If yes, one can deploy a probe; if not, one can skip it. Find sufficient number of habitable exoplanets to succeed the mission.",
     "Galactic Golf": "This \"game\" is 100% hand coded. AI was only used twice to guide a fix. The goal of the game is to get the spaceship (blue ball) to the core (white dot at centre of screen), while avoiding Lebron. The background is provided by a user-supplied .fits file (feel free to use your own), where the intensities dictate the slowdown of the spaceship. Use the left and right arrow keys to change the direction before shooting. Use the up and down arrow keys to choose the shot power. Press the spacebar to shoot. Try to find all 3 secret achievements.",
     "Galactic Shooter": "A bullet hell shooter where the player, as Freddy Fazbear IN SPACE, can move around and shoot the enemy m101.fits with beloved ProgNum student Joe, moving throughout a beautiful fits file skyline! Try to score as high as you can by shooting the m101.fits enemies and survive as long as possible!\n\n"
@@ -101,6 +114,8 @@ GAME_INFO = {
         "R - Restart; start a new round of the game",
     "Galaxy Finder": "Space Invaders variation 'Galaxy Finder'. You shoot a beam and catalogue each galaxy. Game ends when all galaxies in the Local Group are added or a galaxy escapes the range of the beam (goes off-limits).",
     "Galaxy Matcher": "Click and flip galaxy images to find the matched ones.",
+    "GeoGuesser": "Basically geoguesser but with galaxies (unfortunetely only 2). An image will appear in front of you , and your task is to guess what the Galaxy name is from the available options. You might get a fun fact as a reward\n\n"
+        "[yellow]IMPORTANT NOTE: Unfortunately, certain documents required to run this game was not provided by the creator, so the game is currently unplayable.[/yellow]",
     "Ionise HI Clouds": "Choose the photon frequency (energy). By clicking the left mouse, you will shoot photons. The goal is to ionise all the electrons in the window.", 
     "Management Sim": "You are a science project manager, leading expedition amongst different star systems. During the expedition, you can choose to <Survey> the systems, <Mine> useful resources, <Upgrade> anything related to your project, <Scan> the systems, or <Pass>, in this round. When running out funds, morales, or expiry, the game ends.",
     "Medicine across the Universe": "You are on Pluto and need to go to Mercury. Take your ship and you have to make decisions on what do to. Moving to another planet will take you electricity. Everyday you need to eat. You can produce food but it needs electricity. Be careful, if you run out of electricity, you cannot move anymore and are stuck in space forever but if you run out of food, you will die. And the clock is ticking, so don't take too much your time. \n\n"
