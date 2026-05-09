@@ -6,6 +6,7 @@ AUTHOR_NAMES: game creator
 GAMES = {
     "Alien Dress-up Game": "game-NK/",
     "Asteroid Game": "game-DAC/",
+    "Astroscanner": "game-AP/",
     "Big Bang Odyssey": "game-GP",
     "Black Hole Game": "game-SL/",
     "Colour Matcher": "game-MG/",
@@ -30,13 +31,16 @@ GAMES = {
     "Star Wars": "game-SK/",
     "Sweet Saviour": "game-AV/",
     "The Planet Defender": "game-SB",
+    "Tim Shooter Game": "game-YM",
     "Travel to Exoplanet": "game-LJ/",
     "Virtual Telescope Project": "game-BB/",
+    "Voyage": "game-MDB",
 }
 
 AUTHOR_NAMES = {
     "Alien Dress-up Game": "N. Krosse",
     "Asteroid Game": "D. Alvarez Corres",
+    "Astroscanner": "A. Pafitis",
     "Big Bang Odyssey": "G. Parra San Pedro",
     "Black Hole Game": "S. Leszek",
     "Colour Matcher": "M. Gerritsen",
@@ -61,13 +65,16 @@ AUTHOR_NAMES = {
     "Star Wars": "S. Kokkola",
     "Sweet Saviour": "A. Vecht",
     "The Planet Defender": "S. Bazigos",
+    "Tim Shooter Game": "Y. Mesu",
     "Travel to Exoplanet": "L. Jawinski",
     "Virtual Telescope Project": "B. Balas",
+    "Voyage": "M. Bakelaar",
 }
 
 GAME_INFO = {
     "Alien Dress-up Game": "Make your alien the most stylish lifeform in the quadrant! Swap hairstyles and outfits against the stunning backdrop of the M101 galaxy.",
     "Asteroid Game": "Collect belts while avoiding asteroids that reduce your health. The game ends when your health reaches 0.",
+    "Astroscanner": "You are in a 11x11 galaxy and your goal is to scan correctly 3 stars to be sent home. You can move up, down, left and right and you will be notified when you find a star, after which you have to guess which star it is based on its temperature.",
     "Big Bang Odyssey": "You are the last human alive, far from home and with the only help of A.L.I the artificial intelligence of your ship. The fuel is running out, to earn some you will need to play poker hands and continue your trip, trying to avoid the extinction of the humanity. \n\n"
         "The game consist in a poker game, where you can play a total of 4 hands (5 cards each) and discard 3 times (5 cards again). You will need to get the best hands in order to win more points and pass to the next level.\n\n"
         "After each level, an astronomical question is asked, if your answer is right, you will earn more credits; if it is not, nothing will happen. This credits are useful to buy jokers and boosts that will help you during the game.It has 5 rounds, increasing the level of difficulty in each.\n\n"
@@ -118,6 +125,7 @@ GAME_INFO = {
         "A story based astronomy game in which you are tasked to save the world. \n\n"
         "INSTRUCTIONS: During the story's progression you will be presented with questions and dilemma's. Answer correctly or there might be consequences. In total there are 3 differend endings, try to get them all!",
     "The Planet Defender": "The goal is simple -- it is to defend the Moon, Mars and the Earth which are under attack by many waves of meteors. You are given a ship that can shoot bullets to take down the asteroids. You can move the ship around the planet using the arrows and shoot using the space bar. As the levels progress, so does the gravity of the protected bodies which cause the meteors to fall faster and faster. So in the end, the game can become quite challenging. Astronomical calculations were used to simulate the gravity of the falling meteors however were adjusted by a factor to speed them up otherwise they would appear too slow in game, for the pixel window of the game. The waves of meteors also increase as you progress adding a further difficulty to the game.",
+    "Tim Shooter Game": "Use you arrows to move around m101 and make sure not to get hit by Tim, the scary TA. You can shoot him by using the space bar!",
     "Travel to Exoplanet": "In this game, you have to find a password to travel to an exoplanet in a distant galaxy and find a new home for humanity.\n\n"
         "[yellow]IMPORTANT NOTE: Unfortunately, the main image required to run this game was not provided by the creator, so the game is currently unplayable.[/yellow]",
     "Virtual Telescope Project": "Have you ever dreamt of owning a seestar telescope? (Just to clarify, I haven't.) Then you will definitely enjoy the Virtual Telescope Project VTP! With VTP you can control a virtual telescope located in Groningen, look for interesting targets around the sky (if they are visible, of course) and observe them using ESA Skyview.\n\n"
@@ -127,4 +135,7 @@ GAME_INFO = {
             "There are three Entries where you can enter celestial coordinates to point the telescope onto. Then by pressing Go to target you can change the telescope's position. You also can start an observation by pressing Start observation. Also, you can turn on and off the telescope's ability to keep track of the position it is in by pressing Tracking ON/OFF.\n\n"
         "RECENT BUG FIXES\n    "
             "Telescope cannot observe below the horizon. Right Ascension calculation result in the right value",
+    "Voyage": "This is a storyline driven game where you are an astronaut going on a voyage in the universe. You have finally reached your most beautiful destination, but then suddenly your spaceship is hit by something. Your spaceship slowly starts breaking down, but there is a way for you to save yourself and your spaceship.\n\n"
+        "By guessing the correct astronomy themed word (hangman), you will save the spaceship. But if you do not guess the word in 9 tries, there sadly is nothing else left to be done. It is game over for you.\n\n"
+        "Come play this fun and exciting storyline driven game now!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
 }
