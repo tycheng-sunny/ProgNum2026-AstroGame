@@ -35,11 +35,9 @@ All games in this repository are developed in Python. Students were given comple
 - [arcade](https://api.arcade.academy/en/3.3.3/get_started/install.html): very few games require.
 - [tabulate](https://pypi.org/project/tabulate/): very few games require.
 
-# Demo Examples
+# Demo Examples
 
-<video controls src="demo43.mov" title="43. Spaceworm"></video>
-
-
+[Demo43: Spaceworm](https://github.com/tycheng-sunny/ProgNum2026-AstroGame/blob/main/demo43.mov)
 
 ---
 # Credits 
