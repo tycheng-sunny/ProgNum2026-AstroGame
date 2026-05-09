@@ -37,8 +37,10 @@ GAMES = {
     "Space Invaders": "game-ML/",
     "Space Rescue Game": "game-ND/",
     "Spaceworm": "game-TB/",
+    "Star Explorer": "game-IF/",
     "Star Wars": "game-SK/",
     "Stellar Evolution Simulator": "game-GK/",
+    "Sunglasses in Space": "game-SA/",
     "Sweet Saviour": "game-AV/",
     "The Planet Defender": "game-SB",
     "Tim Shooter Game": "game-YM",
@@ -81,8 +83,10 @@ AUTHOR_NAMES = {
     "Space Invaders": "M. Lavik",
     "Space Rescue Game": "N. Demmenie", 
     "Spaceworm": "T. Balvin",
+    "Star Explorer": "I. Frank",
     "Star Wars": "S. Kokkola",
     "Stellar Evolution Simulator": "G. Ketchum",
+    "Sunglasses in Space": "S. Arentsen",
     "Sweet Saviour": "A. Vecht",
     "The Planet Defender": "S. Bazigos",
     "Tim Shooter Game": "Y. Mesu",
@@ -196,6 +200,8 @@ GAME_INFO = {
         "In spirit of the retro Snake game, use the arrow keys to move around a square region of space and eat the stars! Be careful - you cannot hit the edges of the screen or yourself. If you do die, the game gives you some fun information about the star you failed to consume before your death.\n\n"
         "Try to grow as much as you can, learn some facts about stars you can see in the night sky, and most importantly, have fun!",
 
+    "Star Explorer": "The goal of this game is to guess the correct star, based on the hints given. If you guess wrong the first time, you get more hints. You have 5 lives total.",
+
     "Star Wars": "In this game you name and design your own star! Then, you go against other stars. The battle is based on your stars properties. The more superior star will win!\n\n"
         "Instructions:\n    "
         "1. Name your star.\n    "
@@ -204,9 +210,22 @@ GAME_INFO = {
         "4. Choose an approach: Aggressive, Evasive or Balanced. In aggressive, the mass of the stars matters most. In evasive, your velocity matters most. In balanced, all properties matter.\n    "
         "5. Your success depends on your stars properties against the other stars properties. If you win, you can choose to continue paying. If you lose, game is over and you can restart.",
 
-    "Stellar Evolution Simulator": "Take a journey along an HR diagram by helping a star achieve its dream! The player gets to pick between a sun-like star and a massive star, which give two different game paths. The player will receive a trivia question at each step of the stellar evolution ladder, and have two attempts at answering it in order to progress.\n\n"
+    "Stellar Evolution Simulator": "Take a journey along an HR diagram by helping a star achieve its dream! The player gets to pick between a sun-like star and a massive star, which give two different game paths. The player will receive a trivia question at each step of the stellar evolution ladder, and have two attempts at answering it in order to progress.\n\n"
         "In order to play the game, the player must input the correct answer to astronomy trivia questions (related to the stage of stellar evolution that the star is at). In order to play it correctly on terminal, the player needs to close the plotted HR diagrams before moving onto the next part of the game. the player should also put a space before each of its answers, due to the way terminal processes the input.\n\n"
         "Enjoy the game!",
+
+    "Sunglasses in Space": "The goal is to acquire as much data from stars as possible. The player controls a spaceship and flies through a 2D star field created from the 'ra', 'dec' coordinates and 'phot_g_mean_mag' data from Gaia. The player needs to first acquire their sunglasses and then fly to target stars meanwhile dodging or shooting at randomly spawn enemy spaceships that chase the player.\n\n"
+    "How to play:\n    "
+        "- Press 'W' 'A' 'S' 'D' for movement (up, left, down, right)\n    "
+        "- Press 'SPACE' to shoot bullets. You shoot left or right, based on your last movement direction. Shooting an enemy kills them immediately.\n    "
+        "- First you need to fly to the drawn sunglasses on screen to acquire your sunglasses.\n    "
+        "- Press 'E' to put your sunglasses off/on (possible after acquiring the sunglasses)\n\n"
+    "Sunglasses mechanics:\n    "
+        "- With sunglasses put on: You cannot shoot bullets. The stars are dimmed and you see a blue target star where you need to go to acquire data. The next target star turns blue when you've reached the previous blue target star.\n    "
+        "- With sunglasses put off: You can shoot bullets. The stars are brighter and if you get too close to a star the screen goes grey because you are temporarily blinded.\n\n"
+    "Gameover:\n    "
+        "- When hit by an enemy spaceship, the game ends\n    "
+        "- You see your score: data acquired from the amount of stars",
 
     "Sweet Saviour": "Welcome to SWEET SAVIOUR! \n\n " 
         "A story based astronomy game in which you are tasked to save the world. \n\n"
