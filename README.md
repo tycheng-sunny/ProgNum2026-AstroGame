@@ -37,7 +37,7 @@ All games in this repository are developed in Python. Students were given comple
 
 # Demo Examples
 
-[Demo43: Spaceworm](https://github.com/tycheng-sunny/ProgNum2026-AstroGame/blob/main/demo43.mp4)
+![Game 43](demo43.gif)
 
 ---
 # Credits 
