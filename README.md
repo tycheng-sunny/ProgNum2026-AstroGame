@@ -29,6 +29,7 @@ All games in this repository are developed in Python. Students were given comple
 - AstroPy
 - Matplotlib
 - Pandas
+- [rich](https://rich.readthedocs.io/en/latest/introduction.html)
 
 #### Additional for some games
 - [pygame](https://www.pygame.org/wiki/GettingStarted)
