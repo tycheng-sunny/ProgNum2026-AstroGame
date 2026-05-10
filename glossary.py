@@ -191,7 +191,7 @@ GAME_INFO = {
     "Galaxy Finder": "Space Invaders variation 'Galaxy Finder'. You shoot a beam and catalogue each galaxy. Game ends when all galaxies in the Local Group are added or a galaxy escapes the range of the beam (goes off-limits).",
 
     "Galaxy Matcher": "Click and flip galaxy images to find the matched ones.\n\n"
-        "[yellow]IMPORTANT NOTE: Unfortunately, a bug exists, so the game is currently unplayable.[/yellow]",
+        "[yellow]IMPORTANT NOTE: Unfortunately, an error occurs, so the game is currently unplayable.[/yellow]",
 
     "Gambling Game": "In this game, one must gamble to achieve the correct ending. Thou must not loose all your money. Beware!!!!! This is some sketchy territory! You might need to close some pesky astronomy files!",
 
